@@ -1,0 +1,18 @@
+.toggle-btn-container {
+  background-color: transparent;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  span {
+    padding: 2px 4px;
+  }
+}
+
+.fill {
+  fill: var(--textBody);
+  color: var(--textBody);
+}

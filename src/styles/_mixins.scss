@@ -1,0 +1,22 @@
+@mixin lighten() {
+  --bgColor: #{$bgColor_light};
+  --textBody: #{$textColor_light};
+  --textPrimary: #{$textPrimaryColor_light};
+
+  --backdropColor: #{$backdrop_light};
+  --backdropActive: #{$backdrop_active_light};
+}
+
+@mixin darken() {
+  --bgColor: #{$bgColor_dark};
+  --textBody: #{$textColor_dark};
+  --textPrimary: #{$textPrimaryColor_dark};
+  --bgContainer: #{$bgContainerColor_dark};
+  --backdropColor: #{$backdrop_dark};
+  --backdropActive: #{$backdrop_active_dark};
+}
+
+@mixin fontSize($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}

@@ -1,0 +1,12 @@
+<div class="toggle-btn-container" *ngIf="currentMode | async as modeTheme">
+  <button (click)="toggle()">
+    <i-feather
+      name="moon"
+      *ngIf="modeTheme === 'light'"
+      class="fill"
+    ></i-feather>
+    <i-feather name="sun" *ngIf="modeTheme === 'dark'" class="fill"></i-feather>
+    <!-- <span class="light">LIGHT</span>
+    <span class="dark">DARK</span> -->
+  </button>
+</div>
