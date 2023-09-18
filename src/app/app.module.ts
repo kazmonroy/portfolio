@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ModeToggleModule } from './mode-toggle/mode-toggle.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
 
 @NgModule({
   declarations: [AppComponent],
