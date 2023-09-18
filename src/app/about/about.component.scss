@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .top {
   padding: 16px 0px;
   max-width: 100%;
@@ -12,10 +14,8 @@
     color: var(--textPrimary);
     font-family: var(--display-font);
     padding: 2rem 0rem;
-    // letter-spacing: 4px;
-    // font-size: 48px;
   }
-  .content {
+  .title {
     max-width: 100%;
     margin: auto;
     gap: 40px;
@@ -40,15 +40,17 @@
       flex-direction: column;
       gap: 24px;
       width: Min(500px, 100%);
-      // h3 {
-      //   font-family: var(--display-font);
-      //   color: var(--textPrimary);
-      //   font-size: 32px;
-      //   line-height: 48px;
-      //   font-weight: 400;
-      // }
     }
   }
+}
+
+.body {
+  width: Min(500px, 100%);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
 
 @media (min-width: 768px) {
@@ -58,8 +60,9 @@
     h2 {
       padding: 5rem 0rem;
     }
-    .content {
+    .title {
       flex-direction: row;
+      gap: 56px;
 
       .copy {
         h3 {
@@ -68,6 +71,11 @@
           font-weight: 400;
         }
       }
+    }
+
+    .body {
+      padding: 5rem 0rem;
+      gap: 32px;
     }
   }
 }
