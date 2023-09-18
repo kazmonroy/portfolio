@@ -1,19 +1,17 @@
 :host {
-  position: fixed;
   top: 2%;
-  // left: 50%;
-  // transform: translateY(-50%) translateX(-50%);
-  padding: 16px;
-  border-radius: 32px;
-  background-color: var(--backdropColor);
-
-  backdrop-filter: blur(20px) saturate(1.7);
+  position: sticky;
+  z-index: 10;
 }
 
 nav {
+  background-color: var(--backdropColor);
+  backdrop-filter: blur(20px) saturate(1.7);
+  padding: 16px;
   margin: auto;
   max-width: 400px;
-  z-index: 10;
+
+  border-radius: 32px;
 
   ul {
     display: flex;
@@ -40,11 +38,6 @@ nav {
 }
 
 @media (min-width: 640px) {
-  :host {
-    top: 8%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-  }
   nav {
     max-width: fit-content;
     ul {
