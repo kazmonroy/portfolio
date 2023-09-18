@@ -1,6 +1,9 @@
+@use "./variables" as *;
+
 @mixin lighten() {
   --bgColor: #{$bgColor_light};
   --textBody: #{$textColor_light};
+  --textBodyHover: #{$textColorHover_light};
   --textPrimary: #{$textPrimaryColor_light};
 
   --backdropColor: #{$backdrop_light};
@@ -10,6 +13,8 @@
 @mixin darken() {
   --bgColor: #{$bgColor_dark};
   --textBody: #{$textColor_dark};
+  --textBodyHover: #{$textColorHover_dark};
+
   --textPrimary: #{$textPrimaryColor_dark};
   --bgContainer: #{$bgContainerColor_dark};
   --backdropColor: #{$backdrop_dark};

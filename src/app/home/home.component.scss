@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 main {
   display: flex;
 
@@ -29,8 +31,7 @@ main {
       h1 {
         margin: auto;
         word-break: break-word;
-        letter-spacing: 4px;
-        font-size: 48px;
+
         text-align: center;
       }
 
@@ -70,7 +71,7 @@ main {
       display: flex;
       flex-direction: column;
       color: black;
-      // height: 550px;
+
       height: 340px;
       cursor: pointer;
       width: 100%;
@@ -91,17 +92,20 @@ main {
         align-items: flex-end;
         justify-content: flex-end;
         transform: translateY(0px);
-        transition: all 0.4s ease-in-out;
+        transition: all 0.25s ease-in-out;
         gap: 8px;
+        color: $neutral-800;
 
-        h3 {
+        span {
           font-size: 14px;
           text-transform: uppercase;
           letter-spacing: 4px;
           font-weight: 400;
         }
-        p {
+        h2 {
           font-size: 24px;
+          color: $neutral-800;
+          letter-spacing: 0px;
         }
       }
 
@@ -138,12 +142,10 @@ main {
 
       .hero-copy {
         gap: 24px;
-        h1 {
-          font-size: 64px;
-        }
 
         span {
-          font-size: 56px;
+          font-size: 64px;
+          line-height: 64px;
         }
       }
 
@@ -163,13 +165,10 @@ main {
       max-width: 90%;
       margin: auto;
       .card {
-        height: 550px;
+        max-width: 550px;
+        margin: auto;
+        height: 450px;
       }
-
-      // display: grid;
-      // grid-template-columns: repeat(2, minmax(500px, 1fr));
-      // max-width: 100%;
-      // gap: 32px;
     }
   }
 }
