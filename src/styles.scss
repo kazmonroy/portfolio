@@ -15,6 +15,9 @@
 body {
   font-family: var(--body-font);
   color: var(--textBody);
+  padding: 0px 24px;
+  background-color: var(--bgColor);
+  overflow-x: hidden;
 }
 
 body.dark {
@@ -29,4 +32,10 @@ h1 {
 }
 p {
   @include fontSize(16px, 24px);
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 0px 24px;
+  }
 }
