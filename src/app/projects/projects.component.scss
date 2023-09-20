@@ -1,0 +1,31 @@
+.top {
+  padding: 4rem 0px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  h2 {
+    text-align: center;
+    color: var(--textPrimary);
+    font-family: var(--display-font);
+    padding: 2rem 0rem;
+  }
+}
+
+.projects {
+  padding-top: 5rem;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+}
+
+@media (min-width: 640px) {
+  .projects {
+    width: 90%;
+  }
+}

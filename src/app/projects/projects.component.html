@@ -1,1 +1,14 @@
-<p>projects works!</p>
+<section class="top">
+  <h2>Projects</h2>
+</section>
+
+<section class="projects">
+  <app-card
+    *ngFor="let project of projects"
+    [id]="project.id"
+    [name]="project.name"
+    [project]="project.project"
+    [bg]="project.bg"
+    [path]="project.path"
+  ></app-card>
+</section>

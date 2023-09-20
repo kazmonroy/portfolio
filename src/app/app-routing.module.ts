@@ -4,11 +4,42 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', title: 'Home', component: HomeComponent },
+
   {
     path: 'about',
     title: 'About',
     loadComponent: () =>
       import('./about/about.component').then((c) => c.AboutComponent),
+  },
+  {
+    path: 'projects',
+    title: 'Projects',
+    loadComponent: () =>
+      import('./projects/projects.component').then((c) => c.ProjectsComponent),
+  },
+  {
+    path: 'projects/dev',
+    title: 'Dev',
+    loadComponent: () =>
+      import('./projects/components/dev/dev.component').then(
+        (c) => c.DevComponent
+      ),
+  },
+  {
+    path: 'projects/dev/noter',
+    title: 'Noter',
+    loadComponent: () =>
+      import('./projects/dev/noter/noter.component').then(
+        (c) => c.NoterComponent
+      ),
+  },
+  {
+    path: '**',
+    title: '404 Page Not Found',
+    loadComponent: () =>
+      import('./not-found/not-found.component').then(
+        (c) => c.NotFoundComponent
+      ),
   },
 ];
 

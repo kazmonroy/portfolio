@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 
 import { FeatherModule } from 'angular-feather';
-import { Github, Moon, Sun, Linkedin, FileText } from 'angular-feather/icons';
+import {
+  Github,
+  Moon,
+  Sun,
+  Linkedin,
+  FileText,
+  Figma,
+} from 'angular-feather/icons';
 
 const icons = {
   Github,
@@ -9,6 +16,7 @@ const icons = {
   Moon,
   Sun,
   FileText,
+  Figma,
 };
 
 @NgModule({

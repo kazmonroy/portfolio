@@ -1,0 +1,15 @@
+<a
+  [routerLink]="getPath()"
+  [id]="id"
+  [ngStyle]="{ 'background-color': bg }"
+  class="card"
+>
+  <div class="header">
+    <span>{{ project !== "design" ? "Dev" : "Design" }}</span>
+    <h2>{{ name }}</h2>
+  </div>
+
+  <div class="img-container">
+    <img src="./assets/figma.png" alt="" />
+  </div>
+</a>

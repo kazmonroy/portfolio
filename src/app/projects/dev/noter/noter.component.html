@@ -1,0 +1,93 @@
+<section class="top">
+  <h2>Noter</h2>
+  <ul>
+    <li>
+      <span>Role</span>
+      <p>Dev, Design</p>
+    </li>
+    <li>
+      <span>Tools</span>
+      <p>Angular, Vercel, Figma</p>
+    </li>
+  </ul>
+</section>
+
+<section class="overview">
+  <div class="app">
+    <img src="./assets/noter-app-dark.png" alt="" />
+  </div>
+  <div class="description">
+    <h4>Overview</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos est
+      dolorem debitis. Dolorum, quisquam inventore?
+    </p>
+  </div>
+</section>
+<section class="design-system">
+  <h4>Color Mapping</h4>
+  <div class="display">
+    <div *ngFor="let color of colorMapping" class="pantone">
+      <div
+        class="light"
+        [ngStyle]="{
+          'background-color': color.light.hexcode,
+          color: color.light.text
+        }"
+      >
+        <div class="title">{{ color.light.title }}</div>
+        <div class="hexcode">{{ color.light.hexcode }}</div>
+      </div>
+
+      <div
+        class="dark"
+        [ngStyle]="{
+          'background-color': color.dark.hexcode,
+          color: color.dark.text
+        }"
+      >
+        <div class="title">{{ color.dark.title }}</div>
+        <div class="hexcode">{{ color.dark.hexcode }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="design-system">
+  <h4>Color Roles</h4>
+  <div class="display">
+    <div
+      *ngFor="let color of colorRoles"
+      class="role"
+      [ngStyle]="{ 'background-color': color.bg, color: color.text }"
+    >
+      <div class="title">{{ color.title }}</div>
+      <ul>
+        <li *ngFor="let item of color.roles">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="design-system">
+  <h4>Elements</h4>
+  <!-- <div class="elements">
+    <div class="icons">
+      <div class="icon">
+        <i-feather name="sun" class="noter-light"></i-feather>
+      </div>
+      <div class="icon">
+        <i-feather name="moon" class="noter-dark"></i-feather>
+      </div>
+    </div>
+  </div> -->
+  <div class="input-wrap">
+    <input id="icon" type="checkbox" [checked]="true" />
+    <label for="icon">Select</label>
+    <div class="icons">
+      <i-feather name="sun" class="noter-light"></i-feather>
+
+      <i-feather name="moon" class="noter-dark"></i-feather>
+    </div>
+  </div>
+</section>
