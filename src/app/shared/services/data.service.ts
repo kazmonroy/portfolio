@@ -30,27 +30,6 @@ export class DataService {
     },
   ];
 
-  // noter = {
-  //   colorMapping: [
-  //     {
-  //       light: [
-  //         {
-  //           title: 'Surface Container',
-  //           hexcode: '#EDE7DE',
-  //         },
-  //         { title: 'Surface', hexcode: '#FAF8F6' },
-  //       ],
-  //       dark: [
-  //         {
-  //           title: 'DM Surface Container',
-  //           hexcode: '#233831',
-  //         },
-  //         { title: 'DM Surface', hexcode: '#2D483F' },
-  //       ],
-  //     },
-  //   ],
-  // };
-
   noter = {
     colorMapping: [
       {

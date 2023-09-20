@@ -50,6 +50,12 @@ $textPrimaryColor_dark: $secondary-100;
 $bgContainerColor_light: #fefaed;
 $bgContainerColor_dark: #1c212e;
 
+$shadow_light: $neutral-100;
+$shadow_dark: $neutral-800;
+
+$sectionContainer_light: hsla(45, 17%, 95%, 0.8);
+$sectionContainer_dark: hsla(160, 52%, 71%, 0.1);
+
 // navbar
 
 $backdrop_light: hsla(45, 17%, 95%, 0.8);
@@ -57,3 +63,20 @@ $backdrop_dark: hsla(240, 22%, 17%, 0.7);
 
 $backdrop_active_light: hsla(0, 0%, 100%, 1);
 $backdrop_active_dark: hsla(0, 0%, 100%, 0.05);
+
+// Noter
+
+$surfaceContainer_light: #ede7de;
+$surfaceContainer_dark: #233831;
+
+$surface_light: #faf8f6;
+$surface_dark: #2d483f;
+
+$filterHover_light: #efece7;
+$filterHover_dark: hsla(159, 12, 37, 0.7);
+
+$textSecondary_light: #4e6964;
+$textSecondary_dark: #d0e9e0;
+
+$iconHover_light: #faf8f6;
+$iconHover_dark: hsla(159, 12, 37, 0.7);

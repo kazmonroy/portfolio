@@ -70,24 +70,31 @@
   </div>
 </section>
 <section class="design-system">
-  <h4>Elements</h4>
-  <!-- <div class="elements">
-    <div class="icons">
-      <div class="icon">
-        <i-feather name="sun" class="noter-light"></i-feather>
-      </div>
-      <div class="icon">
-        <i-feather name="moon" class="noter-dark"></i-feather>
-      </div>
+  <h4>Interactions</h4>
+  <div class="interactions">
+    <div class="delete">
+      <button class="delete-icon">x</button>
     </div>
-  </div> -->
-  <div class="input-wrap">
-    <input id="icon" type="checkbox" [checked]="true" />
-    <label for="icon">Select</label>
-    <div class="icons">
-      <i-feather name="sun" class="noter-light"></i-feather>
+    <div class="mode-toggle">
+      <input
+        type="checkbox"
+        class="mode-checkbox"
+        id="checkbox"
+        [checked]="mode"
+        (click)="toggleMode()"
+      />
+      <label for="checkbox" class="checkbox-label" [ngClass]="{ dark: !mode }">
+        <i-feather name="sun" class="noter-light"></i-feather>
 
-      <i-feather name="moon" class="noter-dark"></i-feather>
+        <i-feather name="moon" class="noter-dark"></i-feather>
+
+        <span class="ball"></span>
+      </label>
+    </div>
+    <div class="filters">
+      <div class="filter active">All</div>
+      <div class="filter">Active</div>
+      <div class="filter">Done</div>
     </div>
   </div>
 </section>

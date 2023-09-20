@@ -18,8 +18,6 @@ export class ModeToggleComponent implements OnInit {
   private modeToggleService = inject(ModeToggleService);
   currentMode = this.modeToggleService.mode;
 
-  // currentMode = this.modeToggleService.current;
-  // constructor(private modeToggleService: ModeToggleService) {}
   ngOnInit(): void {}
 
   toggle() {

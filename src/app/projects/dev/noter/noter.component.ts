@@ -13,6 +13,12 @@ import { DataService } from 'src/app/shared/services/data.service';
 export class NoterComponent {
   private dataService = inject(DataService);
 
+  mode = true;
+
   colorMapping = this.dataService.noter.colorMapping;
   colorRoles = this.dataService.noter.colorRoles;
+
+  toggleMode() {
+    this.mode = !this.mode;
+  }
 }

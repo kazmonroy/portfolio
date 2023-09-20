@@ -8,6 +8,14 @@
 
   --backdropColor: #{$backdrop_light};
   --backdropActive: #{$backdrop_active_light};
+  --bgSection: #{$sectionContainer_light};
+
+  // Noter
+  --noterSurfaceContainer: #{$surfaceContainer_light};
+  --noterSurface: #{$surface_light};
+  --noterFilterHover: #{$filterHover_light};
+  --noterTextSecondary: #{$textSecondary_light};
+  --noterIconHover: #{$iconHover_light};
 }
 
 @mixin darken() {
@@ -19,6 +27,14 @@
   --bgContainer: #{$bgContainerColor_dark};
   --backdropColor: #{$backdrop_dark};
   --backdropActive: #{$backdrop_active_dark};
+  --bgSection: #{$sectionContainer_dark};
+
+  // Noter
+  --noterSurfaceContainer: #{$surfaceContainer_dark};
+  --noterSurface: #{$surface_dark};
+  --noterFilterHover: #{$filterHover_dark};
+  --noterTextSecondary: #{$textSecondary_dark};
+  --noterIconHover: #{$iconHover_dark};
 }
 
 @mixin fontSize($font-size, $line-height) {
