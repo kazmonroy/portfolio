@@ -9,12 +9,23 @@
       <span>Tools</span>
       <p>Angular, Vercel, Figma</p>
     </li>
+
+    <li></li>
   </ul>
 </section>
 
 <section class="overview">
-  <div class="app">
-    <img src="./assets/noter-app-dark.png" alt="" />
+  <div class="app" *ngIf="currentMode | async as currentMode">
+    <img
+      src="./assets/noter-dark-mode.png"
+      alt="Noter App Dark Mode"
+      *ngIf="currentMode === 'dark'"
+    />
+    <img
+      src="./assets/noter-light-mode.png"
+      alt="Noter App Light Mode"
+      *ngIf="currentMode === 'light'"
+    />
   </div>
   <div class="description">
     <h4>Overview</h4>
@@ -22,6 +33,43 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos est
       dolorem debitis. Dolorum, quisquam inventore?
     </p>
+
+    <div class="preview">
+      <div class="logo">
+        <img src="./assets/noter-logo.png" alt="Noter app logo" />
+      </div>
+
+      <a href="https://ng-noter.vercel.app/" target="_blank">Life demo</a>
+    </div>
+  </div>
+</section>
+<section class="design-system">
+  <h4>Interactions</h4>
+  <div class="interactions">
+    <div class="delete">
+      <button class="delete-icon">x</button>
+    </div>
+    <div class="mode-toggle">
+      <input
+        type="checkbox"
+        class="mode-checkbox"
+        id="checkbox"
+        [checked]="mode"
+        (click)="toggleMode()"
+      />
+      <label for="checkbox" class="checkbox-label" [ngClass]="{ dark: !mode }">
+        <i-feather name="sun" class="noter-light"></i-feather>
+
+        <i-feather name="moon" class="noter-dark"></i-feather>
+
+        <span class="ball"></span>
+      </label>
+    </div>
+    <div class="filters">
+      <div class="filter active">All</div>
+      <div class="filter">Active</div>
+      <div class="filter">Done</div>
+    </div>
   </div>
 </section>
 <section class="design-system">
@@ -66,35 +114,6 @@
           {{ item }}
         </li>
       </ul>
-    </div>
-  </div>
-</section>
-<section class="design-system">
-  <h4>Interactions</h4>
-  <div class="interactions">
-    <div class="delete">
-      <button class="delete-icon">x</button>
-    </div>
-    <div class="mode-toggle">
-      <input
-        type="checkbox"
-        class="mode-checkbox"
-        id="checkbox"
-        [checked]="mode"
-        (click)="toggleMode()"
-      />
-      <label for="checkbox" class="checkbox-label" [ngClass]="{ dark: !mode }">
-        <i-feather name="sun" class="noter-light"></i-feather>
-
-        <i-feather name="moon" class="noter-dark"></i-feather>
-
-        <span class="ball"></span>
-      </label>
-    </div>
-    <div class="filters">
-      <div class="filter active">All</div>
-      <div class="filter">Active</div>
-      <div class="filter">Done</div>
     </div>
   </div>
 </section>

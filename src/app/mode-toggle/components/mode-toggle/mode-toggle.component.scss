@@ -10,13 +10,13 @@
     display: flex;
     align-items: center;
   }
-
-  span {
-    padding: 2px 4px;
-  }
 }
 
 .fill {
   fill: var(--textBody);
   color: var(--textBody);
+
+  &:hover {
+    color: var(--textBodyHover);
+  }
 }

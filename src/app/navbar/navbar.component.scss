@@ -28,6 +28,11 @@ nav {
         color: var(--textBody);
         text-decoration: none;
         font-family: inherit;
+
+        &:hover {
+          color: var(--textBodyHover);
+          background-color: var(--backdropActive);
+        }
       }
 
       .active {
