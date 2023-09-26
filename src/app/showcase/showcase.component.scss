@@ -22,7 +22,7 @@
     flex-direction: column;
     color: black;
 
-    height: 340px;
+    height: 4500px;
     cursor: pointer;
     width: 100%;
 
@@ -36,14 +36,13 @@
     }
 
     .header {
-      padding: 32px 32px 32px 32px;
+      padding: 32px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       justify-content: flex-end;
       transform: translateY(0px);
       transition: all 0.25s ease-in-out;
-      gap: 8px;
       color: $neutral-800;
 
       span {
@@ -67,7 +66,7 @@
 
       .img-container {
         position: absolute;
-        padding: 0px 0px 0px 32px;
+        padding: 0px 0px 0px 60px;
 
         width: 100%;
         overflow: hidden;
@@ -93,7 +92,7 @@
     .card {
       max-width: 550px;
       margin: auto;
-      height: 450px;
+      height: 550px;
     }
   }
 }
