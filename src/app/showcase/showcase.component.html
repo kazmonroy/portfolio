@@ -1,27 +1,12 @@
 <section class="showcase">
-  <a routerLink="projects/dev/noter" class="card">
-    <div class="header">
-      <span>Figma</span>
-      <h2>Noter</h2>
-    </div>
-
-    <div class="body">
-      <div class="img-container">
-        <img src="./assets/noter-thumb.png" alt="Noter figma" />
-      </div>
-    </div>
-  </a>
-
-  <div class="card dev">
-    <div class="header">
-      <span>VSCode</span>
-      <h2>Opal</h2>
-    </div>
-
-    <div class="body">
-      <div class="img-container">
-        <img src="./assets/opal-thumb.png" alt="Opal app" />
-      </div>
-    </div>
-  </div>
+  <app-card
+    *ngFor="let project of projects"
+    [id]="project.id"
+    [name]="project.name"
+    [path]="project.path"
+    [bg]="project.bg"
+    [thumb]="project.thumb"
+    [project]="project.type"
+  >
+  </app-card>
 </section>

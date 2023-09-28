@@ -1,15 +1,17 @@
 <a
-  [routerLink]="getPath()"
+  routerLink="projects/dev/noter"
   [id]="id"
-  [ngStyle]="{ 'background-color': bg }"
   class="card"
+  [ngStyle]="{ 'background-color': bg }"
 >
   <div class="header">
-    <span>{{ project !== "design" ? "Dev" : "Design" }}</span>
+    <span>{{ project }}</span>
     <h2>{{ name }}</h2>
   </div>
 
-  <div class="img-container">
-    <img src="./assets/figma.png" alt="" />
+  <div class="body">
+    <div class="img-container">
+      <img src="./assets/{{ thumb }}.svg" alt="{{ name }} App" />
+    </div>
   </div>
 </a>

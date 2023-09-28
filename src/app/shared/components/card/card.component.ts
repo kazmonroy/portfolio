@@ -16,6 +16,7 @@ export class CardComponent {
   @Input() project!: string;
   @Input() bg!: string;
   @Input() path!: string;
+  @Input() thumb!: string;
 
   getPath() {
     return this.project === 'dev'

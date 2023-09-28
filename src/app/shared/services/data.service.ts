@@ -10,23 +10,26 @@ export class DataService {
     {
       id: 1,
       name: 'Noter',
-      project: 'dev',
+      type: 'dev',
       bg: '#BDDFF9',
       path: 'noter',
+      thumb: 'noter-thumb',
     },
     {
       id: 2,
       name: 'Opal',
-      project: 'design',
+      type: 'design',
       bg: '#9ADED5',
       path: 'opal',
+      thumb: 'opal-thumb',
     },
     {
       id: 3,
       name: 'ngUI',
-      project: 'dev',
+      type: 'dev',
       bg: '#D095E5',
       path: 'ngui',
+      thumb: 'ngui-thumb',
     },
   ];
 
