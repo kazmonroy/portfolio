@@ -18,9 +18,9 @@ export class CardComponent {
   @Input() path!: string;
   @Input() thumb!: string;
 
-  getPath() {
-    return this.project === 'dev'
-      ? `/projects/dev/${this.path}`
-      : `/projects/design${this.path}`;
-  }
+  // getPath() {
+  //   return this.project === 'dev'
+  //     ? `/projects/dev/${this.path}`
+  //     : `/projects/design${this.path}`;
+  // }
 }

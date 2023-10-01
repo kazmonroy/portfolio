@@ -17,19 +17,12 @@ const routes: Routes = [
     loadComponent: () =>
       import('./projects/projects.component').then((c) => c.ProjectsComponent),
   },
+
   {
-    path: 'projects/dev',
-    title: 'Dev',
-    loadComponent: () =>
-      import('./projects/components/dev/dev.component').then(
-        (c) => c.DevComponent
-      ),
-  },
-  {
-    path: 'projects/dev/noter',
+    path: 'projects/noter',
     title: 'Noter',
     loadComponent: () =>
-      import('./projects/dev/noter/noter.component').then(
+      import('./projects/components/noter/noter.component').then(
         (c) => c.NoterComponent
       ),
   },
