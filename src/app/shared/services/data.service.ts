@@ -28,7 +28,7 @@ export class DataService {
       name: 'ngUI',
       type: 'dev',
       bg: '#D095E5',
-      path: 'ngui',
+      path: 'ng-ui',
       thumb: 'ngui-thumb',
     },
   ];

@@ -17,10 +17,4 @@ export class CardComponent {
   @Input() bg!: string;
   @Input() path!: string;
   @Input() thumb!: string;
-
-  // getPath() {
-  //   return this.project === 'dev'
-  //     ? `/projects/dev/${this.path}`
-  //     : `/projects/design${this.path}`;
-  // }
 }

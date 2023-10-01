@@ -1,18 +1,5 @@
-<section class="top">
-  <h2>Noter</h2>
-  <ul>
-    <li>
-      <span>Role</span>
-      <p>Dev, Design</p>
-    </li>
-    <li>
-      <span>Tools</span>
-      <p>Angular, Vercel, Figma</p>
-    </li>
-
-    <li></li>
-  </ul>
-</section>
+<app-project-header [projectName]="'Noter'" [tools]="tools">
+</app-project-header>
 
 <section class="overview">
   <div class="app" *ngIf="currentMode | async as currentMode">
