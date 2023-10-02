@@ -1,0 +1,63 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  // background-color: rgba($color: #000000, $alpha: 0.2);
+  background-color: var(--modalBg);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-content {
+    backdrop-filter: blur(4rem);
+    position: fixed;
+    top: 10%;
+    background-color: var(--modalBgContent);
+    border-radius: 16px;
+
+    width: Min(700px, 100%);
+    margin: auto;
+
+    form {
+      input {
+        background: transparent;
+        border: none;
+        font-size: 16px;
+        color: var(--textPrimary);
+        width: 100%;
+        border-bottom: 1px solid var(--modalItemHover);
+
+        padding: 24px;
+        &::placeholder {
+          color: var(--textPrimary);
+          opacity: 0.8;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      padding: 16px;
+      list-style: none;
+      flex-direction: column;
+      li {
+        border-radius: 4px;
+        cursor: pointer;
+
+        a {
+          display: flex;
+          cursor: pointer;
+          padding: 16px 12px;
+        }
+
+        &:hover {
+          background-color: var(--modalItemHover);
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,11 @@
   --noterFilterHover: #{$filterHover_light};
   --noterTextSecondary: #{$textSecondary_light};
   --noterIconHover: #{$iconHover_light};
+
+  // Modal
+  --modalBg: #{$modalBg_light};
+  --modalBgContent: #{$modalBgContent_light};
+  --modalItemHover: #{$modalBgItemHover_light};
 }
 
 @mixin darken() {
@@ -35,6 +40,11 @@
   --noterFilterHover: #{$filterHover_dark};
   --noterTextSecondary: #{$textSecondary_dark};
   --noterIconHover: #{$iconHover_dark};
+
+  // Modal
+  --modalBg: #{$modalBg_dark};
+  --modalBgContent: #{$modalBgContent_dark};
+  --modalItemHover: #{$modalBgItemHover_dark};
 }
 
 @mixin fontSize($font-size, $line-height) {

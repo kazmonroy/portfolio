@@ -1,0 +1,23 @@
+<section class="modal" *ngIf="projectsModal" (click)="closeModal()">
+  <div class="modal-content">
+    <form [formGroup]="projectsSearch" (click)="$event.stopPropagation()">
+      <label for="project-name">
+        <input
+          type="text"
+          formControlName="projectName"
+          id="project-name"
+          [placeholder]="'Search project'"
+          #searchQuery
+          (input)="onSearch(searchQuery.value)"
+        />
+      </label>
+    </form>
+    <ul class="projects">
+      <li *ngFor="let project of data$ | async">
+        <a routerLink="/projects/{{ project.path }}">
+          {{ project.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

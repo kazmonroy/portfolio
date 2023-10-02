@@ -1,7 +1,7 @@
 :host {
   top: 2%;
   position: sticky;
-  z-index: 10;
+  z-index: 5;
 }
 
 nav {
@@ -23,6 +23,8 @@ nav {
         padding: 8px 16px;
         font-size: 14px;
         display: flex;
+        align-items: center;
+        gap: 8px;
 
         border-radius: 24px;
         color: var(--textBody);
@@ -32,6 +34,14 @@ nav {
         &:hover {
           color: var(--textBodyHover);
           background-color: var(--backdropActive);
+        }
+
+        .slash {
+          padding: 4px 8px;
+          border: 1px solid var(--textBodyHover);
+          color: var(--textBodyHover);
+          border-radius: 4px;
+          font-size: 12px;
         }
       }
 

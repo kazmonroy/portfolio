@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -32,6 +33,9 @@ export class DataService {
       thumb: 'ngui-thumb',
     },
   ];
+
+  private data$ = new BehaviorSubject(this.projects);
+  data = this.data$.asObservable();
 
   noter = {
     colorMapping: [
