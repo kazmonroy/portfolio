@@ -18,7 +18,7 @@
     top: 10%;
     background-color: var(--modalBgContent);
     border-radius: 16px;
-    width: Min(700px, 100%);
+    width: Min(700px, 90%);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -63,5 +63,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .modal {
+    padding: 24px;
   }
 }
