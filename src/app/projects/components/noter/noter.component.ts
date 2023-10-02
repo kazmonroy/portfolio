@@ -25,6 +25,7 @@ export class NoterComponent {
   tools = [
     { name: 'Figma', toolsvg: 'figma.svg' },
     { name: 'Angular', toolsvg: 'angular.svg' },
+    { name: 'Sass', toolsvg: 'sass.svg' },
     { name: 'Vercel', toolsvg: 'vercel.svg' },
   ];
 

@@ -32,6 +32,9 @@ p {
   @include fontSize(16px, 32px);
   font-weight: 300;
 }
+ul {
+  list-style: none;
+}
 
 h1,
 h2,

@@ -1,70 +1,5 @@
 @use "../../../../styles/variables" as *;
 
-// .top {
-//   padding: 4rem 0px;
-//   max-width: 100%;
-//   margin: auto;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   gap: 32px;
-
-//   h2 {
-//     text-align: center;
-//     color: var(--textPrimary);
-//     font-family: var(--display-font);
-//     padding: 2rem 0rem;
-//   }
-
-//   .info {
-//     display: flex;
-//     gap: 24px;
-//     width: Min(800px, 100%);
-//     margin: auto;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-
-//     span {
-//       font-size: 18px;
-//     }
-
-//     ul {
-//       list-style: none;
-//       display: flex;
-//       gap: 40px;
-//       flex: 1;
-//       padding: 24px;
-//       border-radius: 24px;
-//       width: 100%;
-//       justify-content: center;
-
-//       li {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 16px;
-//         cursor: pointer;
-//         align-items: center;
-//         justify-content: center;
-
-//         img {
-//           width: 40px;
-//           transition: all 0.2s ease-in-out;
-//           opacity: 0.8;
-
-//           &:hover {
-//             opacity: 1;
-//           }
-//         }
-
-//         svg {
-//           fill: red;
-//         }
-//       }
-//     }
-//   }
-// }
-
 .overview {
   // margin: 40px 0px;
   width: 100%;
@@ -90,17 +25,25 @@
 
     .preview {
       margin: 32px 0px;
-      padding: 8px 16px;
+      // padding: 8px 16px;
       border-radius: 16px;
       display: flex;
       align-items: center;
       gap: 16px;
 
-      &:hover {
-        background-color: var(--backdropActive);
+      li {
+        a {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          cursor: pointer;
+          padding: 4px;
+          border-radius: 24px;
+        }
       }
+
       .logo {
-        width: 32px;
+        width: 24px;
         display: flex;
         align-items: center;
         img {
@@ -167,7 +110,6 @@
       }
 
       ul {
-        list-style: none;
         li {
           font-size: 14px;
         }
