@@ -4,12 +4,12 @@
 <section class="overview">
   <div class="app" *ngIf="currentMode | async as currentMode">
     <img
-      src="./assets/noter-dark-mode.svg"
+      src="./assets/noter/noter-dark-mode.svg"
       alt="Noter App Dark Mode"
       *ngIf="currentMode === 'dark'"
     />
     <img
-      src="./assets/noter-light-mode.svg"
+      src="./assets/noter/noter-light-mode.svg"
       alt="Noter App Light Mode"
       *ngIf="currentMode === 'light'"
     />
@@ -35,7 +35,7 @@
       <li>
         <a href="https://ng-noter.vercel.app/" target="_blank">
           <div class="logo">
-            <img src="./assets/noter.svg" alt="Noter app logo" />
+            <img src="./assets/noter/noter.svg" alt="Noter app logo" />
           </div>
           Life demo</a
         >
@@ -49,6 +49,7 @@
     </ul>
   </div>
 </section>
+
 <section class="design-system">
   <h4>Interactions</h4>
   <div class="interactions">

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectHeaderComponent } from 'src/app/shared/components/project-header/project-header.component';
+import { IconsModule } from 'src/app/icons/icons.module';
 
 @Component({
   selector: 'app-ng-ui',
   standalone: true,
-  imports: [CommonModule, ProjectHeaderComponent],
+  imports: [CommonModule, IconsModule, ProjectHeaderComponent],
   templateUrl: './ng-ui.component.html',
   styleUrls: ['./ng-ui.component.scss'],
 })
