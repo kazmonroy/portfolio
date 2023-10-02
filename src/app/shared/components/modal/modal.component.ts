@@ -19,6 +19,7 @@ import {
 import { BehaviorSubject, Observable, combineLatest, map } from 'rxjs';
 import { DataService } from '../../services/data.service';
 import { RouterModule } from '@angular/router';
+import { Project } from 'src/app/projects/model/projects.interface';
 
 @Component({
   selector: 'app-modal',
@@ -28,18 +29,15 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent implements OnInit, OnDestroy {
+  @HostListener('document:keydown.escape', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    console.log('scape!');
+
+    this.projectsModal = false;
+  }
   private el = inject(ElementRef);
   private dataService = inject(DataService);
-  data$ = new Observable<
-    {
-      id: number;
-      name: string;
-      type: string;
-      bg: string;
-      path: string;
-      thumb: string;
-    }[]
-  >();
+  data$ = new Observable<Project[]>();
   searchQuery$ = new BehaviorSubject<string>('');
 
   @Input() projectsModal!: boolean;
@@ -50,13 +48,14 @@ export class ModalComponent implements OnInit, OnDestroy {
 
     this.data$ = combineLatest([this.searchQuery$, this.dataService.data]).pipe(
       map(([searchQuery, data]) =>
-        data.filter((x) => x.name.includes(searchQuery))
+        data.filter((x) => x.name.toLowerCase().includes(searchQuery))
       )
     );
   }
 
   ngOnDestroy(): void {
     this.el.nativeElement.remove();
+    this.projectsSearch.reset();
   }
 
   projectsSearch = new FormGroup({
@@ -64,7 +63,7 @@ export class ModalComponent implements OnInit, OnDestroy {
   });
 
   onSearch(searchQuery: string) {
-    this.searchQuery$.next(searchQuery);
+    this.searchQuery$.next(searchQuery.toLowerCase());
   }
 
   closeModal() {

@@ -6,13 +6,14 @@ import { Component, HostListener, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  projectsModal = true;
+  projectsModal = false;
 
   @Output() close = new EventEmitter();
 
   @HostListener('document:keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     let x = event.code;
+
     if (x === 'Slash') {
       this.projectsModal = !this.projectsModal;
     }
