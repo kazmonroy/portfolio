@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FeatherModule } from 'angular-feather';
 import {
   Github,
+  Gitlab,
   Moon,
   Sun,
   Linkedin,
@@ -12,7 +13,7 @@ import {
 
 const icons = {
   Github,
-  Linkedin,
+  Gitlab,
   Moon,
   Sun,
   FileText,
