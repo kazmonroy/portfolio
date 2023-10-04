@@ -6,15 +6,17 @@
 
 nav {
   background-color: var(--backdropColor);
-  backdrop-filter: blur(20px) saturate(1.7);
-  padding: 16px;
+
+  backdrop-filter: blur(20px);
+  padding: 8px;
   margin: auto;
-  max-width: 400px;
+  max-width: fit-content;
 
   border-radius: 32px;
 
   ul {
     display: flex;
+    gap: 2px;
 
     align-items: center;
 
@@ -24,7 +26,7 @@ nav {
         font-size: 14px;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 4px;
 
         border-radius: 24px;
         color: var(--textBody);
@@ -42,6 +44,7 @@ nav {
           color: var(--textBodyHover);
           border-radius: 4px;
           font-size: 12px;
+          display: none;
         }
       }
 
@@ -55,6 +58,7 @@ nav {
 @media (min-width: 640px) {
   nav {
     max-width: fit-content;
+    padding: 16px;
     ul {
       gap: 16px;
 
@@ -62,6 +66,10 @@ nav {
         a {
           padding: 8px 24px;
           font-size: 16px;
+
+          .slash {
+            display: flex;
+          }
         }
       }
     }
