@@ -4,6 +4,7 @@ import { ModeToggleComponent } from '../mode-toggle/components/mode-toggle/mode-
 import { ModeToggleModule } from '../mode-toggle/mode-toggle.module';
 import { ShowcaseComponent } from '../showcase/showcase.component';
 import { ToolsComponent } from '../tools/tools.component';
+import { ProjectsComponent } from '../projects/projects.component';
 
 @Component({
   selector: 'app-home',

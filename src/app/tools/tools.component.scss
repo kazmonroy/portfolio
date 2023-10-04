@@ -3,14 +3,14 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 500px;
+  min-height: 80vh;
   gap: 56px;
 
   ul {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    gap: 24px;
+    grid-template-columns: repeat(4, 50px);
+    gap: 32px;
     justify-content: center;
 
     li {
@@ -37,6 +37,7 @@ section {
 @media (min-width: 640px) {
   section {
     ul {
+      grid-template-columns: repeat(4, 100px);
       li {
         gap: 16px;
         img {

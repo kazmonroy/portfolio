@@ -7,8 +7,10 @@
     *ngFor="let project of projects"
     [id]="project.id"
     [name]="project.name"
-    [project]="project.type"
-    [bg]="project.bg"
     [path]="project.path"
-  ></app-card>
+    [bg]="project.bg"
+    [thumb]="project.thumb"
+    [project]="project.type"
+  >
+  </app-card>
 </section>

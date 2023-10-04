@@ -16,8 +16,8 @@ export class ToolsService {
     { name: 'CSS', toolsvg: 'css3.svg' },
 
     { name: 'MongoDB', toolsvg: 'mongodb.svg' },
-    { name: 'Vercel', toolsvg: 'vercel.svg' },
+    { name: 'Github', toolsvg: 'github.svg' },
     { name: 'Next.js', toolsvg: 'nextdotjs.svg' },
-    { name: 'Docker', toolsvg: 'docker.svg' },
+    { name: 'Vercel', toolsvg: 'vercel.svg' },
   ];
 }
