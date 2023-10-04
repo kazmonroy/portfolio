@@ -119,10 +119,6 @@ section {
   section {
     .description {
       margin: auto;
-
-      .preview {
-        justify-content: center;
-      }
     }
 
     .live {
@@ -131,8 +127,12 @@ section {
     .figma-shell {
       width: 80%;
     }
+  }
 
+  .figma {
     h4 {
+      // width: Min(400px, 80%);
+      // margin: auto;
       text-align: center;
     }
   }
