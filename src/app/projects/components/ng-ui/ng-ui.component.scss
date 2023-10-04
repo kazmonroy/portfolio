@@ -1,4 +1,4 @@
-.overview {
+section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,24 +13,38 @@
     background-color: var(--modalBgContent);
     box-shadow: 0px 50px 100px -20px rgba(0, 0, 0, 0.15);
 
-    ul {
+    .header {
       display: flex;
-      padding: 16px 8px;
-      gap: 8px;
-      li {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
+      .mac-controls {
+        display: flex;
+        padding: 16px 8px;
+        gap: 8px;
 
-        &:first-child {
-          background-color: #fc625d;
-        }
+        li {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
 
-        &:nth-child(2) {
-          background-color: #fdbc40;
+          &:first-child {
+            background-color: #fc625d;
+          }
+
+          &:nth-child(2) {
+            background-color: #fdbc40;
+          }
+          &:last-child {
+            background-color: #35cd4b;
+          }
         }
-        &:last-child {
-          background-color: #35cd4b;
+      }
+
+      .figma {
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+
+        .figma-svg {
+          opacity: 0.3;
         }
       }
     }
@@ -40,6 +54,17 @@
       height: 100%;
       object-fit: cover;
       overflow: hidden;
+    }
+
+    .canvas {
+      background: white;
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      justify-content: center;
+      gap: 24px;
+      padding: 3rem 0;
+      border-radius: 8px;
+      overflow-x: scroll;
     }
   }
 

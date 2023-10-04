@@ -3,11 +3,14 @@
 
 <section class="overview">
   <div class="app">
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+    <div class="header">
+      <ul class="mac-controls">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
     <img src="./assets/ng-ui/ng-ui.svg" alt="ngUI Landing Plage" />
   </div>
   <div class="description">
@@ -40,5 +43,27 @@
         >
       </li>
     </ul>
+  </div>
+</section>
+<section>
+  <div class="app">
+    <div class="header">
+      <ul class="mac-controls">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="figma">
+        <i-feather name="figma" class="figma-svg"></i-feather>
+      </div>
+    </div>
+
+    <div class="canvas">
+      <app-figma-frame
+        *ngFor="let component of frames"
+        [component]="component"
+      ></app-figma-frame>
+    </div>
   </div>
 </section>
