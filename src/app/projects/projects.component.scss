@@ -14,18 +14,3 @@
     padding: 2rem 0rem;
   }
 }
-
-.projects {
-  padding-top: 5rem;
-  width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 32px;
-}
-
-@media (min-width: 640px) {
-  .projects {
-    width: 90%;
-  }
-}
