@@ -14,6 +14,6 @@ export class OpalComponent {
     { name: 'MongoDB', toolsvg: 'mongodb.svg' },
     { name: 'Express', toolsvg: 'express.svg' },
     { name: 'Angular', toolsvg: 'angular.svg' },
-    { name: 'NodeJs', toolsvg: 'nodedotjs.svg' },
+    { name: 'Node.js', toolsvg: 'nodedotjs.svg' },
   ];
 }
