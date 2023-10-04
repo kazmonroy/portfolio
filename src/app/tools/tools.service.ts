@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ToolsService {
   tools = [
-    { name: 'Node.js', toolsvg: 'react.svg' },
+    { name: 'Node.js', toolsvg: 'nodedotjs.svg' },
     { name: 'Angular', toolsvg: 'angular.svg' },
     { name: 'React', toolsvg: 'react.svg' },
     { name: 'TypeScript', toolsvg: 'typescript.svg' },
@@ -14,5 +14,10 @@ export class ToolsService {
     { name: 'Figma', toolsvg: 'figma.svg' },
     { name: 'TailwindCSS', toolsvg: 'tailwindcss.svg' },
     { name: 'CSS', toolsvg: 'css3.svg' },
+
+    { name: 'MongoDB', toolsvg: 'mongodb.svg' },
+    { name: 'Vercel', toolsvg: 'vercel.svg' },
+    { name: 'Next.js', toolsvg: 'nextdotjs.svg' },
+    { name: 'Docker', toolsvg: 'docker.svg' },
   ];
 }
