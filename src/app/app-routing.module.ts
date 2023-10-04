@@ -17,6 +17,7 @@ const routes: Routes = [
     title: 'Projects',
     loadComponent: () =>
       import('./projects/projects.component').then((c) => c.ProjectsComponent),
+    children: [],
   },
 
   {
