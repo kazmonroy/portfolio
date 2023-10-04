@@ -1,5 +1,5 @@
 .top {
-  padding: 4rem 0px;
+  padding: 10rem 0 0rem 0;
   max-width: 100%;
   margin: auto;
   display: flex;
@@ -13,4 +13,8 @@
     font-family: var(--display-font);
     padding: 2rem 0rem;
   }
+}
+
+.projects {
+  padding: 5rem 0;
 }

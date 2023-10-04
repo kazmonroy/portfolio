@@ -1,7 +1,7 @@
 @use "../../styles/variables" as *;
 
 .top {
-  padding: 16px 0px;
+  padding: 10rem 0;
   max-width: 100%;
   margin: auto;
   display: flex;
@@ -56,7 +56,7 @@
 
 @media (min-width: 768px) {
   .top {
-    padding: 32px 0px;
+    padding: 7rem 0;
 
     h2 {
       padding: 5rem 0rem;
