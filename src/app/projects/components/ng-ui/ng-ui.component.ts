@@ -24,5 +24,5 @@ export class NgUiComponent {
     { name: 'Vercel', toolsvg: 'vercel.svg' },
   ];
 
-  frames = ['segments', 'list', 'table'];
+  thumbs = ['segments', 'list', 'table'];
 }

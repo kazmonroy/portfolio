@@ -2,7 +2,7 @@
 </app-project-header>
 
 <section class="overview">
-  <div class="app">
+  <div class="app live">
     <div class="header">
       <ul class="mac-controls">
         <li></li>
@@ -33,7 +33,7 @@
           <div class="logo">
             <img src="./assets/ng-ui/ng-ui-logo.svg" alt="ngUI Logo" />
           </div>
-          Life demo</a
+          Live demo</a
         >
       </li>
       <li>
@@ -45,8 +45,9 @@
     </ul>
   </div>
 </section>
-<section>
-  <div class="app">
+<section class="figma">
+  <h4>Thumbs in Figma</h4>
+  <div class="app figma-shell">
     <div class="header">
       <ul class="mac-controls">
         <li></li>
@@ -54,15 +55,15 @@
         <li></li>
       </ul>
 
-      <div class="figma">
+      <div class="figma-logo">
         <i-feather name="figma" class="figma-svg"></i-feather>
       </div>
     </div>
 
     <div class="canvas">
       <app-figma-frame
-        *ngFor="let component of frames"
-        [component]="component"
+        *ngFor="let thumb of thumbs"
+        [component]="thumb"
       ></app-figma-frame>
     </div>
   </div>
