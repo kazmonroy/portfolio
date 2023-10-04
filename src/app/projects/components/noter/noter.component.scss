@@ -24,7 +24,7 @@
 
     .preview {
       margin: 32px 0px;
-      // padding: 8px 16px;
+
       border-radius: 16px;
       display: flex;
       align-items: center;
@@ -56,14 +56,17 @@
   padding: 4rem 0;
   width: Min(1200px, 100%);
   margin: auto;
+
   .display {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
 
     .pantone {
       border-radius: 8px;
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
       &:hover {
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
           0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -117,7 +120,7 @@
   }
 
   .interactions {
-    padding: 5rem;
+    padding: 5rem 0;
 
     background-color: var(--bgSection);
     backdrop-filter: blur(20px);
