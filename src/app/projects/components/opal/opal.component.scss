@@ -89,6 +89,7 @@ section {
   margin: auto;
 
   .display {
+    margin: 40px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
@@ -152,6 +153,76 @@ section {
       }
     }
   }
+
+  .typography {
+    background-color: var(--modalBgContent);
+
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    justify-content: center;
+
+    .characters {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      display: flex;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 18px;
+    }
+
+    ul {
+      display: flex;
+      gap: 24px;
+
+      li {
+        span {
+          opacity: 0.5;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  }
+
+  .description {
+    width: Min(400px, 80%);
+
+    .preview {
+      margin: 32px 0px;
+
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      li {
+        a {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          cursor: pointer;
+          padding: 4px;
+          border-radius: 24px;
+        }
+      }
+
+      .logo {
+        width: 24px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 640px) {
@@ -162,6 +233,17 @@ section {
 
     .app {
       width: 80%;
+    }
+
+    .typography {
+      .characters {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 56px;
+      }
+      p {
+        font-size: 24px;
+      }
     }
   }
 }
