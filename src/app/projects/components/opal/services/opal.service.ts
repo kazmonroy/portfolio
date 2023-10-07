@@ -6,14 +6,14 @@ import { Injectable } from '@angular/core';
 export class OpalService {
   colorRoles = [
     {
-      title: 'DM Black 00',
+      title: 'DM Black',
       roles: ['Primary Surface'],
       hexcode: '0B0B15',
       bg: '#0B0B15',
       class: 'main',
     },
     {
-      title: 'DM Black 00 Blur',
+      title: 'DM Black Blur',
       roles: ['Modal Container'],
       hexcode: '0B0B15: 10%, Blur: 14px',
       bg: '#0B0B15',
@@ -28,14 +28,19 @@ export class OpalService {
     },
     {
       title: 'DM Black 02',
-      roles: ['Surface Container Higher', 'Card background', 'Inputs'],
+      roles: ['Surface High', 'Card background', 'Inputs'],
       hexcode: '141623',
       bg: '#141623',
       class: '',
     },
     {
       title: 'DM 500',
-      roles: ['Inputs', 'Secondary button', 'Border default', 'Icons hover'],
+      roles: [
+        'Surface Highest',
+        'Inputs',
+        'Secondary button',
+        'Border default',
+      ],
       hexcode: '1C1F31',
       bg: '#1C1F31',
       class: '',

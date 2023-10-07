@@ -81,18 +81,62 @@
 
   <div class="elevation">
     <ul class="layers">
-      <li class="layer">L. 04</li>
-      <li class="layer">L. 03</li>
-      <li class="layer">L. 02</li>
-      <li class="layer">L. 01</li>
+      <li
+        class="layer l-04"
+        (mouseenter)="onHover($event)"
+        (mouseleave)="hide($event)"
+      >
+        L. 04
+      </li>
+      <li
+        class="layer l-03"
+        (mouseenter)="onHover($event)"
+        (mouseleave)="hide($event)"
+      >
+        L. 03
+      </li>
+      <li
+        class="layer l-02"
+        (mouseenter)="onHover($event)"
+        (mouseleave)="hide($event)"
+      >
+        L. 02
+      </li>
+      <li
+        class="layer l-01"
+        (mouseenter)="onHover($event)"
+        (mouseleave)="hide($event)"
+      >
+        L. 01
+      </li>
     </ul>
 
-    <ul class="layers name">
-      <li class="role">DM 500</li>
-      <li class="role">DM Black 02</li>
-      <li class="role">DM Black 01</li>
-      <li class="role">DM Black 00</li>
-    </ul>
+    <div class="layers-name">
+      <div class="layer">
+        <div class="label">
+          <span class="circle" [ngClass]="{ layer4: layer4 }"></span>DM 500
+        </div>
+        <div class="hexcode">#1C1F31</div>
+      </div>
+      <div class="layer">
+        <div class="label">
+          <span class="circle" [ngClass]="{ layer3: layer3 }"></span>DM Black 02
+        </div>
+        <div class="hexcode">#141623</div>
+      </div>
+      <div class="layer">
+        <div class="label">
+          <span class="circle" [ngClass]="{ layer2: layer2 }"></span>DM Black 01
+        </div>
+        <div class="hexcode">#0F0F1B</div>
+      </div>
+      <div class="layer">
+        <div class="label">
+          <span class="circle" [ngClass]="{ layer1: layer1 }"></span>DM Black
+        </div>
+        <div class="hexcode">#0B0B15</div>
+      </div>
+    </div>
   </div>
 </section>
 
