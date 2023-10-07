@@ -84,7 +84,7 @@
 }
 
 section {
-  padding: 4rem 0;
+  padding: 8rem 0;
   width: Min(1200px, 100%);
   margin: auto;
 
@@ -219,6 +219,114 @@ section {
         align-items: center;
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+  .elevation {
+    display: flex;
+    background: #0b0b15;
+    height: 80vh;
+    border-radius: 32px;
+
+    .layers {
+      position: relative;
+      border-radius: 32px;
+
+      background: #0b0b15;
+      padding: 40px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      // margin: auto;
+      // height: 800px;
+
+      align-items: center;
+      justify-content: center;
+
+      .layer {
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        transform: skew(40deg, -25deg);
+
+        border-radius: 16px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        opacity: 0.8;
+        padding: 8px;
+        margin-top: 8rem;
+        cursor: pointer;
+
+        &:first-child:hover,
+        &:nth-child(2):hover,
+        &:nth-child(3):hover,
+        &:last-child:hover {
+          border: 1px solid #5b63d3;
+          box-shadow: 0px 0px 32px 4px #5b63d3;
+        }
+
+        &:first-child {
+          // border: 1px solid #1c1f31;
+          background: #1c1f31;
+          top: 40px;
+          z-index: 4;
+          color: #ffffff;
+        }
+
+        &:nth-child(2) {
+          // border: 1px solid #141623;
+
+          background: #141623;
+          top: 100px;
+          z-index: 3;
+          color: #939db8;
+        }
+
+        &:nth-child(3) {
+          border: 1px solid #1c1f31;
+          background: #0f0f1b;
+          top: 160px;
+          z-index: 2;
+          color: #4e5366;
+        }
+
+        &:last-child {
+          border: 1px solid #1c1f31;
+          background: #0b0b15;
+          top: 220px;
+          z-index: 1;
+          color: #4e5366;
+        }
+      }
+    }
+
+    .name {
+      // justify-content: flex-start;
+      align-items: flex-start;
+      display: flex;
+      gap: 32px;
+
+      li {
+        padding: 1rem 0;
+
+        &:hover {
+          &::before {
+            background-color: #5b63d3;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          -moz-border-radius: 8px;
+          -webkit-border-radius: 8px;
+          border-radius: 8px;
+          background-color: transparent;
+          transform: translateX(-8px);
         }
       }
     }
