@@ -176,6 +176,7 @@ section {
       font-size: 40px;
       display: flex;
       letter-spacing: 1px;
+      overflow: hidden;
     }
     p {
       font-size: 18px;
@@ -229,18 +230,18 @@ section {
     }
   }
   .elevation {
-    // display: grid;
-    // grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
 
     background: #0b0b15;
     min-height: 100vh;
-    border-radius: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 16px;
 
     .layers {
       position: relative;
-      border-radius: 32px;
+
       background: #0b0b15;
       padding: 40px;
       display: flex;
@@ -251,7 +252,7 @@ section {
 
       .layer {
         position: absolute;
-        width: Min(220px, 250px);
+        width: Min(190px, 250px);
         height: 140px;
         transform: skew(40deg, -25deg);
         border-radius: 16px;
@@ -312,8 +313,6 @@ section {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       place-items: start start;
 
-      padding: 16px;
-
       .layer {
         padding: 1rem 0;
         display: flex;
@@ -350,7 +349,6 @@ section {
         .hexcode {
           padding-left: 24px;
 
-          // display: flex;
           width: 100%;
 
           color: #4e5366;
