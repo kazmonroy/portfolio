@@ -127,6 +127,11 @@ section {
           color: #939db8;
           font-size: 14px;
           font-weight: 300;
+          text-overflow: ellipsis;
+
+          /* Needed to make it work */
+          overflow: hidden;
+          white-space: nowrap;
         }
       }
     }
