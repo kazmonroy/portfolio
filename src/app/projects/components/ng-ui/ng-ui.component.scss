@@ -18,7 +18,7 @@ section {
       display: flex;
       .mac-controls {
         display: flex;
-        padding: 16px 8px;
+        padding: 14px 8px;
         gap: 8px;
 
         li {
@@ -61,7 +61,7 @@ section {
       background: white;
       display: grid;
       grid-template-columns: repeat(3, 300px);
-      // justify-content: center;
+
       gap: 24px;
       padding: 8rem 1rem;
       border-radius: 8px;

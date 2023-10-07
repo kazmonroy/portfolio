@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectHeaderComponent } from 'src/app/shared/components/project-header/project-header.component';
+import { IconsModule } from 'src/app/icons/icons.module';
+import { OpalService } from './services/opal.service';
 
 @Component({
   selector: 'app-opal',
   standalone: true,
-  imports: [CommonModule, ProjectHeaderComponent],
+  imports: [CommonModule, ProjectHeaderComponent, IconsModule],
   templateUrl: './opal.component.html',
   styleUrls: ['./opal.component.scss'],
 })
 export class OpalComponent {
-  tools = [
-    { name: 'MongoDB', toolsvg: 'mongodb.svg' },
-    { name: 'Express', toolsvg: 'express.svg' },
-    { name: 'Angular', toolsvg: 'angular.svg' },
-    { name: 'Node.js', toolsvg: 'nodedotjs.svg' },
-  ];
+  private opalService = inject(OpalService);
+  tools = this.opalService.tools;
+
+  colorRoles = this.opalService.colorRoles;
 }

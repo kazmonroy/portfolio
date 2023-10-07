@@ -1,0 +1,167 @@
+.overview {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  justify-content: center;
+
+  .app {
+    overflow: hidden;
+
+    padding: 0px 8px 8px 8px;
+    border-radius: 16px;
+    background-color: var(--modalBgContent);
+    box-shadow: 0px 50px 100px -20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+
+    .header {
+      display: flex;
+      .mac-controls {
+        display: flex;
+        padding: 14px 8px;
+        gap: 8px;
+
+        li {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+
+          &:first-child {
+            background-color: #fc625d;
+          }
+
+          &:nth-child(2) {
+            background-color: #fdbc40;
+          }
+          &:last-child {
+            background-color: #35cd4b;
+          }
+        }
+      }
+    }
+
+    img {
+      border-radius: 8px;
+      width: 100%;
+
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+
+  .description {
+    width: Min(400px, 80%);
+
+    .preview {
+      margin: 32px 0px;
+
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      li {
+        a {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          cursor: pointer;
+          padding: 4px;
+          border-radius: 24px;
+        }
+      }
+
+      .logo {
+        width: 24px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+section {
+  padding: 4rem 0;
+  width: Min(1200px, 100%);
+  margin: auto;
+
+  .display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+
+    border-radius: 16px;
+    background-color: #0b0b15;
+    padding: 24px;
+
+    .role-card {
+      border-radius: 16px;
+      overflow: hidden;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 200px;
+      justify-content: space-between;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+      }
+
+      border: 1px solid #1c1f31;
+
+      .title,
+      .hexcode {
+        font-weight: 500;
+        color: #ffffff;
+      }
+
+      ul {
+        flex: 1;
+        li {
+          color: #939db8;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .secondary {
+      ul {
+        li {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .reverse {
+      border: 1px solid #1c1f31;
+      .title,
+      .hexcode {
+        color: #0f0f1b;
+      }
+
+      ul {
+        li {
+          color: #0f0f1b;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  section {
+    .description {
+      margin: auto;
+    }
+
+    .app {
+      width: 80%;
+    }
+  }
+}

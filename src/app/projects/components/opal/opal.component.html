@@ -1,1 +1,74 @@
 <app-project-header [projectName]="'Opal'" [tools]="tools"></app-project-header>
+<section class="overview">
+  <div class="app">
+    <div class="header">
+      <ul class="mac-controls">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <img src="./assets/opal/opal-shell.svg" alt="ngUI Landing Plage" />
+  </div>
+  <div class="description">
+    <h4>Overview</h4>
+    <p>
+      ngUI is a small project that gave me the opportunity to explore further
+      Angular's routing capabilities, Directives and Lifecycle Hooks to make a
+      component as reusable as possible.
+    </p>
+    <br />
+    <p>
+      The goal was to experiment with different Angular's features combined with
+      Sass to sharpen my Frontend skills while designing something colorful and
+      fun in Figma.
+    </p>
+
+    <ul class="preview">
+      <li>
+        <a href="https://ng-ui.vercel.app/" target="_blank">
+          <div class="logo">
+            <img src="./assets/opal/opal-logo.svg" alt="ngUI Logo" />
+          </div>
+          Live demo</a
+        >
+      </li>
+      <li>
+        <a href="https://gitlab.com/kazmonroy/opal-frontend" target="_blank">
+          <i-feather name="gitlab"></i-feather>
+          Repo</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h4>Color Roles</h4>
+
+  <div class="display">
+    <div
+      *ngFor="let color of colorRoles"
+      class="role-card"
+      [ngClass]="color.class"
+      [ngStyle]="{
+        'background-color': color.bg,
+        
+      }"
+    >
+      <div class="title">
+        {{ color.title }}
+      </div>
+      <ul>
+        <li *ngFor="let item of color.roles">{{ item }}</li>
+      </ul>
+
+      <div class="hexcode">#{{ color.hexcode }}</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h4>Typography</h4>
+</section>
