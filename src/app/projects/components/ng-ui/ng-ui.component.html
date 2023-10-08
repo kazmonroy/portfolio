@@ -3,13 +3,7 @@
 
 <section class="overview">
   <div class="app live">
-    <div class="header">
-      <ul class="mac-controls">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+    <app-mac-controls></app-mac-controls>
 
     <img src="./assets/ng-ui/ng-ui.svg" alt="ngUI Landing Plage" />
   </div>
@@ -48,17 +42,7 @@
 <section class="figma">
   <h4>Thumbs in Figma</h4>
   <div class="app figma-shell">
-    <div class="header">
-      <ul class="mac-controls">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-      <div class="figma-logo">
-        <i-feather name="figma" class="figma-svg"></i-feather>
-      </div>
-    </div>
+    <app-mac-controls [figma]="true"></app-mac-controls>
 
     <div class="canvas">
       <app-figma-frame

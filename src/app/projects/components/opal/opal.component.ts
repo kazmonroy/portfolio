@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProjectHeaderComponent } from 'src/app/shared/components/project-header/project-header.component';
 import { IconsModule } from 'src/app/icons/icons.module';
 import { OpalService } from './services/opal.service';
+import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac-controls.component';
 
 enum Layers {
   LAYER_04 = 'l-04',
@@ -14,7 +15,12 @@ enum Layers {
 @Component({
   selector: 'app-opal',
   standalone: true,
-  imports: [CommonModule, ProjectHeaderComponent, IconsModule],
+  imports: [
+    CommonModule,
+    ProjectHeaderComponent,
+    IconsModule,
+    MacControlsComponent,
+  ],
   templateUrl: './opal.component.html',
   styleUrls: ['./opal.component.scss'],
 })

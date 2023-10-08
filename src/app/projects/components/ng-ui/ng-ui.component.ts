@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProjectHeaderComponent } from 'src/app/shared/components/project-header/project-header.component';
 import { IconsModule } from 'src/app/icons/icons.module';
 import { FigmaFrameComponent } from './components/figma-frame/figma-frame.component';
+import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac-controls.component';
 
 @Component({
   selector: 'app-ng-ui',
@@ -12,6 +13,7 @@ import { FigmaFrameComponent } from './components/figma-frame/figma-frame.compon
     IconsModule,
     ProjectHeaderComponent,
     FigmaFrameComponent,
+    MacControlsComponent,
   ],
   templateUrl: './ng-ui.component.html',
   styleUrls: ['./ng-ui.component.scss'],
