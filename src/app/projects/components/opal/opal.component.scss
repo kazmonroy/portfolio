@@ -19,12 +19,12 @@
       display: flex;
       .mac-controls {
         display: flex;
-        padding: 14px 8px;
-        gap: 8px;
+        padding: 8px 4px;
+        gap: 4px;
 
         li {
-          width: 12px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
           border-radius: 50%;
 
           &:first-child {
@@ -360,13 +360,28 @@ section {
 }
 
 @media (min-width: 640px) {
+  .overview {
+    .app {
+      width: 80%;
+
+      .header {
+        .mac-controls {
+          padding: 10px 8px;
+          gap: 8px;
+
+          li {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
   section {
     .description {
       margin: auto;
-    }
-
-    .app {
-      width: 80%;
     }
 
     .typography {
@@ -415,7 +430,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
-        align-items: flex-start;
+
         flex-direction: column;
       }
     }

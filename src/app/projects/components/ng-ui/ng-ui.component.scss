@@ -16,14 +16,15 @@ section {
 
     .header {
       display: flex;
+
       .mac-controls {
         display: flex;
-        padding: 14px 8px;
-        gap: 8px;
+        padding: 8px 4px;
+        gap: 4px;
 
         li {
-          width: 12px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
           border-radius: 50%;
 
           &:first-child {
@@ -46,6 +47,10 @@ section {
 
         .figma-svg {
           opacity: 0.3;
+
+          width: 16px;
+          display: flex;
+          align-items: center;
         }
       }
     }
@@ -119,6 +124,26 @@ section {
   section {
     .description {
       margin: auto;
+    }
+
+    .app {
+      .header {
+        .mac-controls {
+          padding: 10px 8px;
+          gap: 8px;
+
+          li {
+            width: 12px;
+            height: 12px;
+          }
+        }
+
+        .figma-logo {
+          .figma-svg {
+            width: 20px;
+          }
+        }
+      }
     }
 
     .live {
