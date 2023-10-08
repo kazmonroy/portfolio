@@ -1,0 +1,60 @@
+.bar {
+  display: flex;
+
+  .mac-controls {
+    display: flex;
+    padding: 8px 4px;
+    gap: 4px;
+
+    li {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+
+      &:first-child {
+        background-color: #fc625d;
+      }
+
+      &:nth-child(2) {
+        background-color: #fdbc40;
+      }
+      &:last-child {
+        background-color: #35cd4b;
+      }
+    }
+  }
+
+  .figma-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+
+    .figma-svg {
+      opacity: 0.3;
+
+      width: 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .bar {
+    .mac-controls {
+      padding: 10px 8px;
+      gap: 8px;
+
+      li {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    .figma-logo {
+      .figma-svg {
+        width: 20px;
+      }
+    }
+  }
+}
