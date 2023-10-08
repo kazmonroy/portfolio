@@ -207,9 +207,8 @@ section {
   .elevation {
     display: flex;
     flex-direction: column;
-
     background: #0b0b15;
-    min-height: 80vh;
+    min-height: 70vh;
     border-radius: 16px;
     overflow: hidden;
     padding: 16px;
@@ -218,7 +217,7 @@ section {
       position: relative;
 
       background: #0b0b15;
-      padding: 40px;
+      // padding: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -236,9 +235,10 @@ section {
         justify-content: center;
         opacity: 0.8;
         padding: 8px;
-        margin-top: 8rem;
         cursor: pointer;
         font-size: 12px;
+
+        margin-top: 5rem;
 
         &:first-child:hover,
         &:nth-child(2):hover,
@@ -251,7 +251,7 @@ section {
         &:first-child {
           border: 1px solid #1c1f31;
           background: #1c1f31;
-          top: 40px;
+          top: 20px;
           z-index: 4;
           color: #ffffff;
         }
@@ -260,7 +260,7 @@ section {
           border: 1px solid #141623;
 
           background: #141623;
-          top: 80px;
+          top: 60px;
           z-index: 3;
           color: #939db8;
         }
@@ -268,7 +268,7 @@ section {
         &:nth-child(3) {
           border: 1px solid #1c1f31;
           background: #0f0f1b;
-          top: 120px;
+          top: 100px;
           z-index: 2;
           color: #4e5366;
         }
@@ -276,7 +276,7 @@ section {
         &:last-child {
           border: 1px solid #1c1f31;
           background: #0b0b15;
-          top: 160px;
+          top: 140px;
           z-index: 1;
           color: #4e5366;
         }
@@ -305,8 +305,8 @@ section {
 
           .circle {
             display: inline-block;
-            width: 14px;
-            height: 14px;
+            width: 12px;
+            height: 12px;
             -moz-border-radius: 8px;
             -webkit-border-radius: 8px;
             border-radius: 8px;
@@ -357,17 +357,26 @@ section {
     }
 
     .elevation {
+      .layers-name {
+        place-items: center center;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    .elevation {
       display: grid;
       grid-template-columns: 2fr 1fr;
       gap: 32px;
-      min-height: 100vh;
 
       .layers {
-        margin-top: 80px;
+        margin-top: 2rem;
         .layer {
           font-size: 16px;
-          width: 350px;
-          height: 200px;
+          width: 280px;
+          height: 150px;
 
           &:first-child {
             top: 40px;
@@ -389,7 +398,7 @@ section {
 
       .layers-name {
         display: flex;
-        align-items: center;
+        align-items: self-start;
         justify-content: center;
 
         flex-direction: column;
