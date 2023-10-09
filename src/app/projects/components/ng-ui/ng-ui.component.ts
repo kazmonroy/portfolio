@@ -4,6 +4,7 @@ import { ProjectHeaderComponent } from 'src/app/shared/components/project-header
 import { IconsModule } from 'src/app/icons/icons.module';
 import { FigmaFrameComponent } from './components/figma-frame/figma-frame.component';
 import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac-controls.component';
+import { OverviewComponent } from 'src/app/shared/components/overview/overview.component';
 
 @Component({
   selector: 'app-ng-ui',
@@ -14,6 +15,7 @@ import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac
     ProjectHeaderComponent,
     FigmaFrameComponent,
     MacControlsComponent,
+    OverviewComponent,
   ],
   templateUrl: './ng-ui.component.html',
   styleUrls: ['./ng-ui.component.scss'],
@@ -27,4 +29,11 @@ export class NgUiComponent {
   ];
 
   thumbs = ['segments', 'list', 'table'];
+
+  links = {
+    demo: 'https://ng-ui.vercel.app/',
+    projectIcon: 'ng-ui/ng-ui-logo.svg',
+    repo: 'https://gitlab.com/kazmonroy/ng-components-ui',
+    icon: 'gitlab',
+  };
 }

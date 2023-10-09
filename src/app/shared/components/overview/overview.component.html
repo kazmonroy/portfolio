@@ -1,0 +1,30 @@
+<section>
+  <div class="app">
+    <app-mac-controls></app-mac-controls>
+
+    <img src="./assets/{{ imgPath }}" [alt]="altText" />
+  </div>
+  <div class="overview">
+    <h4>Overview</h4>
+    <ng-content select=".content"></ng-content>
+
+    <br />
+
+    <ul class="preview">
+      <li>
+        <a [href]="links.demo" target="_blank">
+          <div class="logo">
+            <img src="./assets/{{ links.projectIcon }}" alt="ngUI Logo" />
+          </div>
+          Live demo</a
+        >
+      </li>
+      <li>
+        <a [href]="links.repo" target="_blank">
+          <i-feather [name]="links.icon"></i-feather>
+          Repo</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>

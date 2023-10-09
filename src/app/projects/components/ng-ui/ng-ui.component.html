@@ -1,14 +1,12 @@
 <app-project-header [projectName]="'ngUI'" [tools]="tools">
 </app-project-header>
 
-<section class="overview">
-  <div class="app live">
-    <app-mac-controls></app-mac-controls>
-
-    <img src="./assets/ng-ui/ng-ui.svg" alt="ngUI Landing Plage" />
-  </div>
-  <div class="description">
-    <h4>Overview</h4>
+<app-overview
+  [imgPath]="'ng-ui/ng-ui.svg'"
+  [altText]="'ng-ui App'"
+  [links]="links"
+>
+  <div class="content">
     <p>
       ngUI is a small project that gave me the opportunity to explore further
       Angular's routing capabilities, Directives and Lifecycle Hooks to make a
@@ -20,25 +18,9 @@
       Sass to sharpen my Frontend skills while designing something colorful and
       fun in Figma.
     </p>
-
-    <ul class="preview">
-      <li>
-        <a href="https://ng-ui.vercel.app/" target="_blank">
-          <div class="logo">
-            <img src="./assets/ng-ui/ng-ui-logo.svg" alt="ngUI Logo" />
-          </div>
-          Live demo</a
-        >
-      </li>
-      <li>
-        <a href="https://gitlab.com/kazmonroy/ng-components-ui" target="_blank">
-          <i-feather name="gitlab"></i-feather>
-          Repo</a
-        >
-      </li>
-    </ul>
   </div>
-</section>
+</app-overview>
+
 <section class="figma">
   <h4>Thumbs in Figma</h4>
   <div class="app figma-shell">

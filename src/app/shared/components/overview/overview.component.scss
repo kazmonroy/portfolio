@@ -1,0 +1,65 @@
+section {
+  // width: Min(400px, 80%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+
+  .app {
+    overflow: hidden;
+
+    padding: 0px 8px 8px 8px;
+    border-radius: 16px;
+    background-color: var(--modalBgContent);
+    box-shadow: 0px 50px 100px -20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+
+    img {
+      width: 100%;
+
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+
+  .overview {
+    width: Min(400px, 80%);
+
+    ul {
+      margin: 32px 0px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      li {
+        a {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          cursor: pointer;
+          padding: 4px;
+          border-radius: 24px;
+        }
+      }
+
+      .logo {
+        width: 24px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  section {
+    .overview {
+      margin: auto;
+    }
+  }
+}
