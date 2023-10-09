@@ -1,0 +1,61 @@
+.role-card {
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 200px;
+  justify-content: space-between;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  border: 1px solid #1c1f31;
+
+  .title {
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  ul {
+    flex: 1;
+    li {
+      color: #939db8;
+      font-size: 14px;
+      font-weight: 300;
+      text-overflow: ellipsis;
+
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.secondary {
+  .hexcode {
+    color: #ffffff;
+  }
+  ul {
+    li {
+      color: #ffffff;
+    }
+  }
+}
+
+.reverse {
+  border: 1px solid #1c1f31;
+
+  .title,
+  .hexcode {
+    color: #0f0f1b;
+  }
+
+  ul {
+    li {
+      color: #0f0f1b;
+    }
+  }
+}
