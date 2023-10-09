@@ -5,6 +5,7 @@ import { IconsModule } from 'src/app/icons/icons.module';
 import { OpalService } from './services/opal.service';
 import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac-controls.component';
 import { ColorCardComponent } from 'src/app/shared/components/color-card/color-card.component';
+import { OverviewComponent } from 'src/app/shared/components/overview/overview.component';
 
 enum Layers {
   LAYER_04 = 'l-04',
@@ -22,6 +23,7 @@ enum Layers {
     IconsModule,
     MacControlsComponent,
     ColorCardComponent,
+    OverviewComponent,
   ],
   templateUrl: './opal.component.html',
   styleUrls: ['./opal.component.scss'],
@@ -36,6 +38,12 @@ export class OpalComponent {
   layer1 = false;
 
   colorRoles = this.opalService.colorRoles;
+  links = {
+    demo: 'https://opal-app.vercel.app/',
+    projectIcon: 'opal/opal-logo.svg',
+    repo: 'https://gitlab.com/kazmonroy/opal-frontend',
+    icon: 'gitlab',
+  };
 
   onHover(event: any) {
     if (event.target.classList.contains(`${Layers.LAYER_04}`)) {
@@ -70,6 +78,4 @@ export class OpalComponent {
       this.layer1 = !this.layer1;
     }
   }
-
-  // this.showLayerIndicator = !this.showLayerIndicator;
 }

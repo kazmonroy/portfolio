@@ -1,16 +1,13 @@
 <app-project-header [projectName]="'Opal'" [tools]="tools"></app-project-header>
-<section class="overview">
-  <div class="app">
-    <app-mac-controls></app-mac-controls>
-
-    <img src="./assets/opal/opal-shell.svg" alt="ngUI Landing Plage" />
-  </div>
-  <div class="description">
-    <h4>Overview</h4>
+<app-overview
+  [imgPath]="'opal/opal-shell.svg'"
+  [altText]="'Opal App UI'"
+  [links]="links"
+>
+  <div class="content">
     <p>
-      Opal is a project management tool that aims to track tasks among users by
-      offering features like creating new boards, adding new tasks and show
-      real-time updates.
+      Opal is a project management tool with CRUD features such as creating new
+      boards, adding/editing tasks and show real-time updates.
     </p>
     <br />
     <p>
@@ -26,7 +23,7 @@
       others will be pleased to use.
     </p>
 
-    <ul class="preview">
+    <!-- <ul class="preview">
       <li>
         <a href="https://opal-app.vercel.app/" target="_blank">
           <div class="logo">
@@ -41,9 +38,9 @@
           Repo</a
         >
       </li>
-    </ul>
+    </ul> -->
   </div>
-</section>
+</app-overview>
 
 <section>
   <div class="description">
