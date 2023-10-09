@@ -92,31 +92,31 @@
       overflow: hidden;
     }
 
-    .role {
-      border-radius: 8px;
-      overflow: hidden;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      min-height: 200px;
-      justify-content: space-between;
-      cursor: pointer;
-      &:hover {
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-          0 4px 6px -4px rgb(0 0 0 / 0.1);
-      }
+    // .role {
+    //   border-radius: 8px;
+    //   overflow: hidden;
+    //   padding: 16px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   min-height: 200px;
+    //   justify-content: space-between;
+    //   cursor: pointer;
+    //   &:hover {
+    //     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    //       0 4px 6px -4px rgb(0 0 0 / 0.1);
+    //   }
 
-      .title {
-        font-size: 16px;
-        font-weight: 500;
-      }
+    //   .title {
+    //     font-size: 16px;
+    //     font-weight: 500;
+    //   }
 
-      ul {
-        li {
-          font-size: 14px;
-        }
-      }
-    }
+    //   ul {
+    //     li {
+    //       font-size: 14px;
+    //     }
+    //   }
+    // }
   }
 
   .interactions {

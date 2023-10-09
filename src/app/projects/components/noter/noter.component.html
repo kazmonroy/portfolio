@@ -110,7 +110,11 @@
 <section class="design-system">
   <h4>Color Roles</h4>
   <div class="display">
-    <div
+    <app-color-card
+      *ngFor="let color of colorRoles"
+      [colorRole]="color"
+    ></app-color-card>
+    <!-- <div
       *ngFor="let color of colorRoles"
       class="role"
       [ngStyle]="{ 'background-color': color.bg, color: color.text }"
@@ -121,6 +125,6 @@
           {{ item }}
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </section>

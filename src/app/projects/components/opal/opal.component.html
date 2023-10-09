@@ -56,35 +56,23 @@
   </div>
 
   <div class="display">
-    <div
+    <app-color-card
       *ngFor="let color of colorRoles"
-      class="role-card"
-      [ngClass]="color.class"
-      [ngStyle]="{
-        'background-color': color.bg,
-        
-      }"
-    >
-      <div class="title">
-        {{ color.title }}
-      </div>
-      <ul>
-        <li *ngFor="let item of color.roles">{{ item }}</li>
-      </ul>
-
-      <div class="hexcode">#{{ color.hexcode }}</div>
-    </div>
+      [colorRole]="color"
+    ></app-color-card>
   </div>
 </section>
 
 <section>
-  <h4>Elevation</h4>
-  <p>
-    Working with elevation in Dark Mode can be a little challenging in getting
-    right. Material Design’s dark theme colour elevation principles laid the
-    ground to work from a hierarchical viewpoint: the higher the elevation of a
-    surface, the lighter it should appear.
-  </p>
+  <div class="description">
+    <h4>Elevation</h4>
+    <p>
+      Working with elevation in Dark Mode can be a little challenging in getting
+      right. Material Design's dark theme colour elevation principles laid the
+      ground to work from a hierarchical viewpoint: the higher the elevation of
+      a surface, the lighter it should appear.
+    </p>
+  </div>
 
   <div class="elevation">
     <ul class="layers">

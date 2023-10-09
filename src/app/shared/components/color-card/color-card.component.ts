@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-interface ColorRole {
+export interface ColorRole {
   class: string;
   bg: string;
   title: string;
   roles: string[];
-  hexcode: string;
+  hexcode?: string;
 }
 @Component({
   selector: 'app-color-card',

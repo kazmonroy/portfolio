@@ -13,37 +13,5 @@
     <li *ngFor="let item of colorRole.roles">{{ item }}</li>
   </ul>
 
-  <div class="hexcode">#{{ colorRole.hexcode }}</div>
+  <div class="hexcode" *ngIf="colorRole.hexcode">#{{ colorRole.hexcode }}</div>
 </div>
-
-<!-- <div
-  *ngFor="let color of colorRoles"
-  class="role-card"
-  [ngClass]="color.class"
-  [ngStyle]="{
-  'background-color': color.bg,
-  
-}"
->
-  <div class="title">
-    {{ color.title }}
-  </div>
-  <ul>
-    <li *ngFor="let item of color.roles">{{ item }}</li>
-  </ul>
-
-  <div class="hexcode">#{{ color.hexcode }}</div>
-</div> -->
-
-<!-- <div
-*ngFor="let color of colorRoles"
-class="role"
-[ngStyle]="{ 'background-color': color.bg, color: color.text }"
->
-<div class="title">{{ color.title }}</div>
-<ul>
-  <li *ngFor="let item of color.roles">
-    {{ item }}
-  </li>
-</ul>
-</div> -->

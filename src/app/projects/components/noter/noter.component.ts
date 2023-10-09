@@ -4,23 +4,30 @@ import { IconsModule } from 'src/app/icons/icons.module';
 import { DataService } from 'src/app/shared/services/data.service';
 import { ModeToggleService } from 'src/app/mode-toggle/services/mode-toggle.service';
 import { ProjectHeaderComponent } from 'src/app/shared/components/project-header/project-header.component';
+import { NoterService } from './services/noter.service';
+import { ColorCardComponent } from 'src/app/shared/components/color-card/color-card.component';
 
 @Component({
   selector: 'app-noter',
   standalone: true,
-  imports: [CommonModule, IconsModule, ProjectHeaderComponent],
+  imports: [
+    CommonModule,
+    IconsModule,
+    ProjectHeaderComponent,
+    ColorCardComponent,
+  ],
   templateUrl: './noter.component.html',
   styleUrls: ['./noter.component.scss'],
 })
 export class NoterComponent {
-  private dataService = inject(DataService);
   private modeService = inject(ModeToggleService);
+  private noterService = inject(NoterService);
   currentMode = this.modeService.modeChanged$;
 
   mode = true;
 
-  colorMapping = this.dataService.noter.colorMapping;
-  colorRoles = this.dataService.noter.colorRoles;
+  colorMapping = this.noterService.colorMapping;
+  colorRoles = this.noterService.colorRoles;
 
   tools = [
     { name: 'Figma', toolsvg: 'figma.svg' },

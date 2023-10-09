@@ -33,45 +33,10 @@ section {
     }
   }
 
-  // .live {
-  //   width: 100%;
-  // }
   .figma-shell {
     width: 100%;
     margin: auto;
   }
-
-  // .description {
-  //   width: Min(400px, 80%);
-
-  //   .preview {
-  //     margin: 32px 0px;
-  //     border-radius: 16px;
-  //     display: flex;
-  //     align-items: center;
-  //     gap: 16px;
-
-  //     li {
-  //       a {
-  //         display: flex;
-  //         gap: 8px;
-  //         align-items: center;
-  //         cursor: pointer;
-  //         padding: 4px;
-  //         border-radius: 24px;
-  //       }
-  //     }
-
-  //     .logo {
-  //       width: 24px;
-  //       display: flex;
-  //       align-items: center;
-  //       img {
-  //         width: 100%;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 .figma {
@@ -81,13 +46,6 @@ section {
 
 @media (min-width: 640px) {
   section {
-    // .description {
-    //   margin: auto;
-    // }
-
-    // .live {
-    //   width: 60%;
-    // }
     .figma-shell {
       width: 80%;
     }
