@@ -1,25 +1,24 @@
 @use "../../styles/variables" as *;
 
 .top {
-  padding: 10rem 0;
   max-width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
+  padding-top: 8rem;
+  gap: 3rem;
 
-  h2 {
+  h1 {
     text-align: center;
     color: var(--textPrimary);
     font-family: var(--display-font);
-    padding: 2rem 0rem;
   }
 
   .title {
     max-width: 100%;
     margin: auto;
-    gap: 40px;
+    gap: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +38,7 @@
     .copy {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 14px;
       width: Min(500px, 100%);
     }
   }
@@ -51,19 +50,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 1rem;
+  padding: 1rem 0 5rem 0;
 }
 
 @media (min-width: 768px) {
   .top {
-    padding: 7rem 0;
+    padding-top: 13rem;
+    gap: 5rem;
 
-    h2 {
-      padding: 5rem 0rem;
-    }
     .title {
       flex-direction: row;
-      gap: 56px;
+      gap: 5rem;
 
       .copy {
         h3 {
@@ -73,11 +71,11 @@
         }
       }
     }
+  }
 
-    .body {
-      padding: 5rem 0rem;
-      gap: 32px;
-    }
+  .body {
+    padding-top: 5rem;
+    gap: 1.5rem;
   }
 }
 

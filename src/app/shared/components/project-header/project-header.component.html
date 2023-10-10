@@ -1,13 +1,14 @@
 <section>
-  <h2>{{ projectName }}</h2>
-
-  <div class="tools">
-    <span>Stack</span>
-    <ul>
-      <li *ngFor="let tool of tools">
-        <img src="./assets/tools/{{ tool.toolsvg }}" alt="" />
-        <small class="">{{ tool.name }}</small>
-      </li>
-    </ul>
-  </div>
+  <h1>{{ projectName }}</h1>
 </section>
+
+<div class="tools">
+  <span>Stack</span>
+
+  <ul>
+    <li *ngFor="let tool of tools">
+      <img src="./assets/tools/{{ tool.toolsvg }}" alt="" />
+      <small class="">{{ tool.name }}</small>
+    </li>
+  </ul>
+</div>

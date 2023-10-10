@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToolsService } from './tools.service';
 
@@ -11,5 +11,6 @@ import { ToolsService } from './tools.service';
 })
 export class ToolsComponent {
   private toolsService = inject(ToolsService);
-  tools: { name: string; toolsvg: string }[] = this.toolsService.tools;
+
+  @Input() tools: { name: string; toolsvg: string }[] = this.toolsService.tools;
 }
