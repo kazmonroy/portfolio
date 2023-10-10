@@ -2,12 +2,11 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 64px;
   justify-content: center;
+  padding-top: 3rem;
 
   .app {
     overflow: hidden;
-
     padding: 0px 8px 8px 8px;
     border-radius: 16px;
     background-color: var(--modalBgContent);
@@ -39,10 +38,10 @@ section {
   }
 }
 
-.figma {
-  gap: 24px;
-  padding: 6rem 0;
-}
+// .figma {
+//   gap: 24px;
+//   padding: 6rem 0;
+// }
 
 @media (min-width: 640px) {
   section {

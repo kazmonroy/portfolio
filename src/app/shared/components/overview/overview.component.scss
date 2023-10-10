@@ -2,7 +2,7 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 88px;
+  gap: 3rem;
   justify-content: center;
 
   .app {
@@ -27,10 +27,9 @@ section {
   }
 
   .overview {
-    width: Min(400px, 80%);
+    width: Min(600px, 100%);
 
     ul {
-      margin: 32px 0px;
       border-radius: 16px;
       display: flex;
       align-items: center;
@@ -65,7 +64,12 @@ section {
       width: 80%;
     }
     .overview {
+      // width: 50%;
       margin: auto;
+
+      ul {
+        margin-top: 1rem;
+      }
     }
   }
 }

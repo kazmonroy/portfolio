@@ -14,9 +14,9 @@ nav {
   background-color: var(--backdropColor);
   position: sticky;
   backdrop-filter: blur(20px);
-  padding: 8px;
+  padding: 0.5rem;
   width: fit-content;
-  border-radius: 32px;
+  border-radius: 4rem;
 
   ul {
     display: flex;
@@ -28,14 +28,14 @@ nav {
     li {
       a {
         padding: 8px 12px;
-        font-size: 14px;
+
         display: flex;
         align-items: center;
         // gap: 4px;
 
         border-radius: 24px;
         color: var(--textBody);
-        text-decoration: none;
+
         font-family: inherit;
 
         &:hover {
