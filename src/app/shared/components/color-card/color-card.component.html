@@ -3,8 +3,8 @@
   [ngClass]="colorRole.class"
   [ngStyle]="{
   'background-color': colorRole.bg,
-  
 }"
+  (click)="copyString(colorRole.bg)"
 >
   <div class="title">
     {{ colorRole.title }}

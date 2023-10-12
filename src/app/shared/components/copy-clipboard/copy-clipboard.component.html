@@ -1,0 +1,9 @@
+<div class="notification" *ngIf="hexcode | async as bgColor">
+  Copied!
+  <div
+    class="circle"
+    [ngStyle]="{
+    'background-color': bgColor,
+  }"
+  ></div>
+</div>

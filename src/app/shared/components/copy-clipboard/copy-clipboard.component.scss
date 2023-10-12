@@ -1,0 +1,57 @@
+:host {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 1rem;
+}
+
+.notification {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  background: var(--bgNotification);
+  transform: translateY(0px);
+  color: var(--textNotification);
+
+  animation-name: show;
+  animation-duration: 2s;
+  box-shadow: var(--shadow);
+
+  .circle {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50px;
+  }
+}
+
+// @keyframes show {
+//   from {
+//     transform: translateY(100px);
+//   }
+//   to {
+//     transform: translateY(0px);
+//   }
+// }
+
+@keyframes show {
+  0% {
+    transform: translateY(80px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(80px);
+  }
+}
