@@ -12,7 +12,7 @@ export class ToolsService {
 
     { name: 'Sass', toolsvg: 'sass.svg' },
     { name: 'Figma', toolsvg: 'figma.svg' },
-    { name: 'TailwindCSS', toolsvg: 'tailwindcss.svg' },
+    { name: 'Tailwind', toolsvg: 'tailwindcss.svg' },
     { name: 'CSS', toolsvg: 'css3.svg' },
 
     // { name: 'MongoDB', toolsvg: 'mongodb.svg' },

@@ -43,6 +43,9 @@ $modalBg_light: rgba(28, 33, 46, 0.3);
 $modalBgContent_light: rgba(254, 250, 237, 0.8);
 $modalBgItemHover_light: rgba(254, 250, 237, 0.8);
 
+$shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
 $bgColor_light: $secondary-50;
 $bgColor_dark: $neutral-900;
 
@@ -63,6 +66,13 @@ $shadow_dark: $neutral-800;
 
 $sectionContainer_light: hsla(45, 17%, 95%, 0.8);
 $sectionContainer_dark: hsla(160, 52%, 71%, 0.1);
+
+// notification
+$notificationBg_light: #ede7de;
+$notificationText_light: #141623;
+
+$notificationBg_dark: #141623;
+$notificationText_dark: #ede7de;
 
 // navbar
 

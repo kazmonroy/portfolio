@@ -10,6 +10,9 @@
   --backdropActive: #{$backdrop_active_light};
   --bgSection: #{$sectionContainer_light};
 
+  --bgNotification: #{$notificationBg_light};
+  --textNotification: #{$notificationText_light};
+
   // Noter
   --noterSurfaceContainer: #{$surfaceContainer_light};
   --noterSurface: #{$surface_light};
@@ -21,6 +24,9 @@
   --modalBg: #{$modalBg_light};
   --modalBgContent: #{$modalBgContent_light};
   --modalItemHover: #{$modalBgItemHover_light};
+
+  --shadow-md: #{$shadow-md};
+  --shadow: #{$shadow};
 }
 
 @mixin darken() {
@@ -34,6 +40,10 @@
   --backdropColor: #{$modalBg_dark};
   --backdropActive: #{$backdrop_active_dark};
   --bgSection: #{$sectionContainer_dark};
+
+  // Notificaiton
+  --bgNotification: #{$notificationBg_dark};
+  --textNotification: #{$notificationText_dark};
 
   // Noter
   --noterSurfaceContainer: #{$surfaceContainer_dark};

@@ -113,4 +113,11 @@ export class DataService {
       },
     ],
   };
+
+  private hexcode$ = new BehaviorSubject<string | null>(null);
+  latestHexcode$ = this.hexcode$.asObservable();
+
+  updateHexcode(hexcode: string | null) {
+    this.hexcode$.next(hexcode);
+  }
 }

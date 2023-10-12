@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ModalComponent } from './shared/components/modal/modal.component';
+import { CopyClipboardComponent } from './shared/components/copy-clipboard/copy-clipboard.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { ModalComponent } from './shared/components/modal/modal.component';
     NavbarComponent,
     FooterComponent,
     ModalComponent,
+    CopyClipboardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
