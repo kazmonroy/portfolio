@@ -31,8 +31,6 @@ import { Project } from 'src/app/projects/model/projects.interface';
 export class ModalComponent implements OnInit, OnDestroy {
   @HostListener('document:keydown.escape', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    console.log('scape!');
-
     this.projectsModal = false;
   }
   private el = inject(ElementRef);

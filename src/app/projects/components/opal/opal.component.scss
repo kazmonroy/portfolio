@@ -148,7 +148,8 @@ section {
     display: flex;
     flex-direction: column;
     background: #0b0b15;
-    min-height: 70vh;
+    min-height: 650px;
+    // min-height: 90vh;
     border-radius: 16px;
     overflow: hidden;
     padding: 16px;
@@ -156,6 +157,7 @@ section {
 
     .layers {
       position: relative;
+      width: Max(20vw, 200px);
 
       background: #0b0b15;
 
@@ -164,10 +166,12 @@ section {
       align-items: center;
       justify-content: center;
       flex: 1;
+      margin: auto;
 
       .layer {
         position: absolute;
-        width: Min(190px, 250px);
+        width: 100%;
+
         height: 140px;
         transform: skew(40deg, -25deg);
         border-radius: 16px;
@@ -192,7 +196,8 @@ section {
         &:first-child {
           border: 1px solid #1c1f31;
           background: #1c1f31;
-          top: 20px;
+          // top: 20px;
+          top: Min(20px, 40px);
           z-index: 4;
           color: #ffffff;
         }
@@ -201,7 +206,8 @@ section {
           border: 1px solid #141623;
 
           background: #141623;
-          top: 60px;
+          // top: 60px;
+          top: Min(60px, 100px);
           z-index: 3;
           color: #939db8;
         }
@@ -209,7 +215,9 @@ section {
         &:nth-child(3) {
           border: 1px solid #1c1f31;
           background: #0f0f1b;
-          top: 100px;
+          // top: 100px;
+          top: Min(100px, 160px);
+
           z-index: 2;
           color: #4e5366;
         }
@@ -217,7 +225,9 @@ section {
         &:last-child {
           border: 1px solid #1c1f31;
           background: #0b0b15;
-          top: 140px;
+          // top: 140px;
+          top: Min(140px, 220px);
+
           z-index: 1;
           color: #4e5366;
         }
@@ -299,6 +309,7 @@ section {
     }
 
     .elevation {
+      min-height: 80vh;
       .layers-name {
         place-items: center center;
       }
@@ -306,7 +317,7 @@ section {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   section {
     .elevation {
       display: grid;
@@ -316,8 +327,8 @@ section {
       .layers {
         margin-top: 2rem;
         .layer {
-          font-size: 16px;
-          width: 280px;
+          font-size: 14px;
+
           height: 150px;
 
           &:first-child {
