@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
 export class CardComponent {
   @Input() id!: number;
   @Input() name!: string;
-  @Input() project!: string;
+  @Input() tools!: string[];
   @Input() bg!: string;
   @Input() path!: string;
   @Input() thumb!: string;

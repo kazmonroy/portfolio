@@ -1,7 +1,7 @@
 export interface Project {
   id: number;
   name: string;
-  type: string;
+  tools: string[];
   bg: string;
   path: string;
   thumb: string;

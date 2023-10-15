@@ -5,7 +5,12 @@
   [ngStyle]="{ 'background-color': bg }"
 >
   <div class="header">
-    <span>{{ project }}</span>
+    <div class="badges">
+      <span *ngFor="let tool of tools" class="badge">
+        {{ tool }}
+      </span>
+    </div>
+
     <h2>{{ name }}</h2>
   </div>
 

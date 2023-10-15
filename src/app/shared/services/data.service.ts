@@ -11,7 +11,7 @@ export class DataService {
     {
       id: 1,
       name: 'Noter',
-      type: 'dev',
+      tools: ['Angular'],
       bg: '#BDDFF9',
       path: 'noter',
       thumb: 'noter-thumb',
@@ -19,7 +19,7 @@ export class DataService {
     {
       id: 2,
       name: 'Opal',
-      type: 'design',
+      tools: ['MEAN stack'],
       bg: '#9ADED5',
       path: 'opal',
       thumb: 'opal-thumb',
@@ -27,7 +27,7 @@ export class DataService {
     {
       id: 3,
       name: 'ngUI',
-      type: 'dev',
+      tools: ['Angular'],
       bg: '#D095E5',
       path: 'ng-ui',
       thumb: 'ngui-thumb',
