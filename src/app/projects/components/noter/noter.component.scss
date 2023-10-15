@@ -23,12 +23,10 @@
     width: Min(400px, 80%);
 
     .preview {
-      margin: 32px 0px;
-
-      border-radius: 16px;
       display: flex;
       align-items: center;
       gap: 16px;
+      padding-top: 24px;
 
       li {
         a {
@@ -36,8 +34,19 @@
           gap: 8px;
           align-items: center;
           cursor: pointer;
-          padding: 4px;
+          padding: 6px 12px;
           border-radius: 24px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 12px;
+          background-color: var(--linkBadgeBg);
+
+          border: 1px solid var(--linkBadgeBorder);
+          color: var(--linkBadgeText);
+
+          &:hover {
+            background-color: var(--linkBadgeHover);
+          }
         }
       }
 

@@ -25,12 +25,14 @@ section {
   padding-bottom: 3rem;
 
   span {
-    font-size: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   ul {
     display: flex;
-    gap: 32px;
+    gap: 2rem;
     flex: 1;
     padding: 24px;
 
@@ -65,6 +67,7 @@ section {
   }
   .tools {
     ul {
+      gap: 3.5rem;
       li {
         gap: 16px;
         img {

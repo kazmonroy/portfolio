@@ -27,6 +27,12 @@
 
   --shadow-md: #{$shadow-md};
   --shadow: #{$shadow};
+
+  // Link Badge
+  --linkBadgeBg: var(--backdropColor);
+  --linkBadgeText: #{$link_badge_text_light};
+  --linkBadgeBorder: #{$link_badge_border_light};
+  --linkBadgeHover: var(--backdropActive);
 }
 
 @mixin darken() {
@@ -56,6 +62,12 @@
   --modalBg: #{$modalBg_dark};
   --modalBgContent: #{$modalBgContent_dark};
   --modalItemHover: #{$modalBgItemHover_dark};
+
+  // Link Badge
+  --linkBadgeBg: #{$link_badge_bg_dark};
+  --linkBadgeText: #{$link_badge_text_dark};
+  --linkBadgeBorder: #{$link_badge_border_dark};
+  --linkBadgeHover: #{$link_badge_hover_dark};
 }
 
 @mixin fontSize($font-size, $line-height, $font-weight) {

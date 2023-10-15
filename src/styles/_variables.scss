@@ -74,6 +74,19 @@ $notificationText_light: #141623;
 $notificationBg_dark: #141623;
 $notificationText_dark: #ede7de;
 
+// link-badges
+$link_badge_bg_dark: hsla(0, 0%, 100%, 0.05);
+// $link_badge_bg_light: var($backdrop_light:);
+
+$link_badge_hover_dark: hsla(0, 0%, 100%, 0.08);
+$link_badge_hover_light: hsla(45, 93%, 89%, 0.8);
+
+$link_badge_text_dark: $neutral-100;
+$link_badge_text_light: $neutral-800;
+
+$link_badge_border_dark: $neutral-900;
+$link_badge_border_light: hsla(45, 93%, 89%, 0);
+
 // navbar
 
 $backdrop_light: hsla(45, 17%, 95%, 0.8);
@@ -85,7 +98,7 @@ $backdrop_active_dark: hsla(0, 0%, 100%, 0.05);
 // Noter
 
 $surfaceContainer_light: #ede7de;
-$surfaceContainer_dark: #233831;
+$surfaceContainer_dark: $neutral-800;
 
 $surface_light: #faf8f6;
 $surface_dark: #2d483f;
