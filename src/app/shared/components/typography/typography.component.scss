@@ -1,0 +1,52 @@
+.typography {
+  background-color: var(--modalBgContent);
+
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  justify-content: center;
+
+  .characters {
+    font-weight: 400;
+    font-size: 40px;
+    display: flex;
+    letter-spacing: 1px;
+    overflow: hidden;
+    line-height: 64px;
+  }
+  p {
+    font-size: 18px;
+  }
+
+  ul {
+    display: flex;
+    gap: 24px;
+
+    li {
+      span {
+        opacity: 0.5;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .typography {
+    padding: 40px;
+    gap: 32px;
+    .characters {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 56px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}

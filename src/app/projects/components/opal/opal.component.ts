@@ -7,6 +7,7 @@ import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac
 import { ColorCardComponent } from 'src/app/shared/components/color-card/color-card.component';
 import { OverviewComponent } from 'src/app/shared/components/overview/overview.component';
 import { CopyClipboardComponent } from 'src/app/shared/components/copy-clipboard/copy-clipboard.component';
+import { TypographyComponent } from 'src/app/shared/components/typography/typography.component';
 
 enum Layers {
   LAYER_04 = 'l-04',
@@ -26,6 +27,7 @@ enum Layers {
     ColorCardComponent,
     OverviewComponent,
     CopyClipboardComponent,
+    TypographyComponent,
   ],
   templateUrl: './opal.component.html',
   styleUrls: ['./opal.component.scss'],

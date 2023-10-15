@@ -6,6 +6,7 @@ import { ModeToggleService } from 'src/app/mode-toggle/services/mode-toggle.serv
 import { ProjectHeaderComponent } from 'src/app/shared/components/project-header/project-header.component';
 import { NoterService } from './services/noter.service';
 import { ColorCardComponent } from 'src/app/shared/components/color-card/color-card.component';
+import { TypographyComponent } from 'src/app/shared/components/typography/typography.component';
 
 @Component({
   selector: 'app-noter',
@@ -15,6 +16,7 @@ import { ColorCardComponent } from 'src/app/shared/components/color-card/color-c
     IconsModule,
     ProjectHeaderComponent,
     ColorCardComponent,
+    TypographyComponent,
   ],
   templateUrl: './noter.component.html',
   styleUrls: ['./noter.component.scss'],

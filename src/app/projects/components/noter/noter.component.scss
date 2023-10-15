@@ -105,10 +105,10 @@
   .interactions {
     padding: 5rem 0;
 
-    background-color: var(--bgSection);
+    background-color: var(--modalBgContent);
     backdrop-filter: blur(20px);
 
-    border-radius: 8px;
+    border-radius: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center center;
