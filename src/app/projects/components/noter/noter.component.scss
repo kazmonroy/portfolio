@@ -72,7 +72,7 @@
     gap: 32px;
 
     .pantone {
-      border-radius: 8px;
+      border-radius: 1rem;
       cursor: pointer;
       display: flex;
       flex-direction: column;
@@ -163,15 +163,16 @@
     .filters {
       background-color: var(--noterSurface);
       display: flex;
-      gap: 16px;
-      padding: 8px;
-      border-radius: 16px;
+      gap: 2rem;
+      padding: 12px 16px;
+      border-radius: 2rem;
       width: fit-content;
 
       .filter {
         color: var(--noterTextSecondary);
-        padding: 4px 8px;
+        padding: 8px 16px;
         border-radius: 24px;
+
         cursor: pointer;
         &:hover {
           background-color: var(--noterFilterHover);
@@ -186,14 +187,12 @@
     .delete-icon {
       cursor: pointer;
       border: none;
-      width: 32px;
-      height: 32px;
-
-      padding: 4px;
+      width: 44px;
+      height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 22px;
+      font-size: 30px;
       border-radius: 50%;
       background-color: transparent;
       transition: all 0.3s ease-in-out;
@@ -225,13 +224,27 @@
     flex-direction: row;
     gap: 32px;
   }
-  .interactions {
-    gap: 32px;
-  }
 
   .design-system {
     .display {
       gap: 24px;
+    }
+
+    .interactions {
+      gap: 32px;
+
+      .filters {
+        display: flex;
+        gap: 16px;
+        padding: 8px;
+        border-radius: 5rem;
+        width: fit-content;
+
+        .filter {
+          padding: 8px 16px;
+          border-radius: 24px;
+        }
+      }
     }
   }
 }
