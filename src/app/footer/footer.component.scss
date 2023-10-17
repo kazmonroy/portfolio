@@ -40,5 +40,8 @@ footer {
   footer {
     flex-direction: row;
     align-items: flex-start;
+    .links {
+      gap: 8rem;
+    }
   }
 }
