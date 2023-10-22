@@ -32,6 +32,14 @@ export class DataService {
       path: 'ng-ui',
       thumb: 'ngui-thumb',
     },
+    {
+      id: 4,
+      name: 'Spire',
+      tools: ['React'],
+      bg: '#E7B89C',
+      path: 'spire',
+      thumb: 'spire-thumb',
+    },
   ];
 
   private data$ = new BehaviorSubject(this.projects);

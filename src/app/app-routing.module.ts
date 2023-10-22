@@ -41,7 +41,15 @@ const routes: Routes = [
     title: 'ngUI',
     loadComponent: () =>
       import('./projects/components/ng-ui/ng-ui.component').then(
-        (c) => NgUiComponent
+        (c) => c.NgUiComponent
+      ),
+  },
+  {
+    path: 'projects/spire',
+    title: 'Spire',
+    loadComponent: () =>
+      import('./projects/components/spire/spire.component').then(
+        (c) => c.SpireComponent
       ),
   },
   {
