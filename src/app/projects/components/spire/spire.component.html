@@ -29,5 +29,22 @@
 </app-overview>
 
 <section>
+  <div class="title">
+    <h4>Color System</h4>
+    <p>
+      Spire's colour palette was inspired by the Star Wars sequel trilogy. Thus,
+      Shadcn UI CSS variables were adapted on both Light and Dark mode themes.
+    </p>
+  </div>
+
+  <div class="display">
+    <app-color-card
+      *ngFor="let color of colorRoles"
+      [colorRole]="color"
+    ></app-color-card>
+  </div>
+</section>
+
+<section>
   <app-typography font="Plus Jakarta Sans"></app-typography>
 </section>

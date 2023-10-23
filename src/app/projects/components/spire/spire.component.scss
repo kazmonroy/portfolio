@@ -3,8 +3,23 @@ section {
   width: Min(1200px, 100%);
   margin: auto;
 
-  h4 {
-    text-align: center;
+  .title {
     width: Min(600px, 100%);
+    margin-bottom: 32px;
+  }
+
+  .display {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (min-width: 640px) {
+  section {
+    .title {
+      margin-inline: auto;
+    }
   }
 }
