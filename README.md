@@ -1,43 +1,30 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <a href="https://github.com/kazmonroy/portfolio">
-    <img src="/src/assets/logo.png" alt="Logo" width="64" height="64">
+  <a href="https://kazmonroy.com">
+    <img src="/src/assets/logo.svg" alt="Kaz Monroy Logo" width="64" height="64">
   </a>
 
 <h3 align="center">Personal Portfolio</h3>
+<p align="center">
+  Built with:
+</p>
+<p align="center">
+    <a href="https://figma.com/"><img src="https://img.shields.io/badge/Figma-0A0A0A?&logo=figma&logoColor=white" alt="Figma"></a>
+      <a href="https://vercel.com/"><img src="https://img.shields.io/badge/Vercel-0A0A0A?&logo=vercel" alt="Vercel"></a>
+    <a href="https://angular.io/"><img src="https://img.shields.io/badge/Angular-v16-2181C1?&logo=angular&logoColor=white" alt="Angular"></a>
+    <a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/Sass-v1.69-2181C1?&logo=sass&logoColor=white" alt="Sass"></a>
+</p>
 
-  <p align="center">
-    Hi and thank you for stopping by!
-    <br />
-    <br />
-    <a href="https://kazmonroy.com/">Check my portfolio</a>
-    ·
-    <a href="https://github.com/kazmonroy/portfolio/issues">Report Bug</a>
-    
-  </p>
 </div>
 
 ## About
 
 My portfolio is built with [Angular](https://angular.io/), styled with [Sass](https://sass-lang.com/) and deployed in [Vercel](https://vercel.com/). It showcases both Design and Full Stack Development projects that I have worked on. Feel free to have a look and feeback is most welcome! [kazmonroy.com](https://www.kazmonroy.com/)
 
-### Built With
-
-- [![Angular.io](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
-
-- [![Vercel](https://img.shields.io/badge/Vercel-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white)](https://www.vercel.com/)
-
-- [![Sass](https://img.shields.io/badge/Sass-C04080?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Contact
 
-- [LinkedIn](https://www.linkedin.com/in/katherinemonroy/)
-- [kazmonroy.com](https://www.kazmonroy.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+If you are interested in contacting me, drop me a line on [Linkedin](https://www.linkedin.com/in/katherinemonroy/)
 
 ## License
 
