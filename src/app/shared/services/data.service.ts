@@ -10,14 +10,6 @@ export class DataService {
   projects = [
     {
       id: 1,
-      name: 'Noter',
-      tools: ['Angular'],
-      bg: '#BDDFF9',
-      path: 'noter',
-      thumb: 'noter-thumb',
-    },
-    {
-      id: 2,
       name: 'Opal',
       tools: ['MEAN stack'],
       bg: '#9ADED5',
@@ -25,20 +17,29 @@ export class DataService {
       thumb: 'opal-thumb',
     },
     {
-      id: 3,
-      name: 'ngUI',
+      id: 2,
+      name: 'Noter',
       tools: ['Angular'],
-      bg: '#D095E5',
-      path: 'ng-ui',
-      thumb: 'ngui-thumb',
+      bg: '#BDDFF9',
+      path: 'noter',
+      thumb: 'noter-thumb',
     },
+
     {
-      id: 4,
+      id: 3,
       name: 'Spire',
       tools: ['React'],
       bg: '#E7B89C',
       path: 'spire',
       thumb: 'spire-thumb',
+    },
+    {
+      id: 4,
+      name: 'ngUI',
+      tools: ['Angular'],
+      bg: '#D095E5',
+      path: 'ng-ui',
+      thumb: 'ngui-thumb',
     },
   ];
 
