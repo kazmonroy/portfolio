@@ -5,6 +5,7 @@ import { SpireService } from './services/spire.service';
 import { OverviewComponent } from 'src/app/shared/components/overview/overview.component';
 import { TypographyComponent } from 'src/app/shared/components/typography/typography.component';
 import { ColorCardComponent } from 'src/app/shared/components/color-card/color-card.component';
+import { SectionHeaderComponent } from 'src/app/shared/components/section-header/section-header.component';
 
 @Component({
   selector: 'app-spire',
@@ -15,6 +16,7 @@ import { ColorCardComponent } from 'src/app/shared/components/color-card/color-c
     OverviewComponent,
     TypographyComponent,
     ColorCardComponent,
+    SectionHeaderComponent,
   ],
   templateUrl: './spire.component.html',
   styleUrls: ['./spire.component.scss'],

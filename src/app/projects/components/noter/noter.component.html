@@ -50,8 +50,11 @@
   </div>
 </section>
 
-<section class="design-system">
-  <h4>Interactions</h4>
+<section>
+  <app-section-header>
+    <h4>Interactions</h4>
+  </app-section-header>
+
   <div class="interactions">
     <div class="delete">
       <button class="delete-icon">x</button>
@@ -79,8 +82,11 @@
     </div>
   </div>
 </section>
-<section class="design-system">
-  <h4>Color Mapping</h4>
+<section>
+  <app-section-header>
+    <h4>Color Mapping</h4>
+  </app-section-header>
+
   <div class="display">
     <div *ngFor="let color of colorMapping" class="pantone">
       <div
@@ -107,8 +113,11 @@
     </div>
   </div>
 </section>
-<section class="design-system">
-  <h4>Color Roles</h4>
+<section>
+  <app-section-header>
+    <h4>Color Roles</h4>
+  </app-section-header>
+
   <div class="display">
     <app-color-card
       *ngFor="let color of colorRoles"
@@ -117,6 +126,6 @@
   </div>
 </section>
 
-<section class="design-system">
+<section>
   <app-typography font=" Epilogue "></app-typography>
 </section>

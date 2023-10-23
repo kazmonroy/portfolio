@@ -6,6 +6,7 @@ import { FigmaFrameComponent } from './components/figma-frame/figma-frame.compon
 import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac-controls.component';
 import { OverviewComponent } from 'src/app/shared/components/overview/overview.component';
 import { TypographyComponent } from 'src/app/shared/components/typography/typography.component';
+import { SectionHeaderComponent } from 'src/app/shared/components/section-header/section-header.component';
 
 @Component({
   selector: 'app-ng-ui',
@@ -18,6 +19,7 @@ import { TypographyComponent } from 'src/app/shared/components/typography/typogr
     MacControlsComponent,
     OverviewComponent,
     TypographyComponent,
+    SectionHeaderComponent,
   ],
   templateUrl: './ng-ui.component.html',
   styleUrls: ['./ng-ui.component.scss'],

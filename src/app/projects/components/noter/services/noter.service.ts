@@ -54,7 +54,7 @@ export class NoterService {
       roles: ['Body'],
       bg: '#EDE7DE',
 
-      class: 'reverse border-none',
+      class: 'reverse border',
     },
     {
       title: 'Surface',
@@ -75,14 +75,14 @@ export class NoterService {
       roles: ['Primary text', 'Icons'],
       bg: '#4E6964',
 
-      class: 'border-none',
+      class: 'secondary border-none',
     },
     {
       title: 'Secondary',
       roles: ['Input active', 'Hover icon'],
       bg: '#2D483F',
 
-      class: 'border-none',
+      class: 'secondary border-none',
     },
   ];
 }

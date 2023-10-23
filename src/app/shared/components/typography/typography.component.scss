@@ -1,9 +1,4 @@
 section {
-  .title {
-    width: Min(600px, 100%);
-    margin-bottom: 32px;
-  }
-
   .typography {
     background-color: var(--modalBgContent);
     padding: 1rem;
@@ -45,10 +40,6 @@ section {
 }
 @media (min-width: 640px) {
   section {
-    .title {
-      margin-inline: auto;
-    }
-
     .typography {
       margin-inline: auto;
       width: fit-content;

@@ -1,0 +1,11 @@
+.header {
+  width: Min(600px, 100%);
+
+  margin-bottom: 32px;
+}
+
+@media (min-width: 640px) {
+  .header {
+    margin: auto;
+  }
+}

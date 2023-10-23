@@ -7,6 +7,7 @@ import { ProjectHeaderComponent } from 'src/app/shared/components/project-header
 import { NoterService } from './services/noter.service';
 import { ColorCardComponent } from 'src/app/shared/components/color-card/color-card.component';
 import { TypographyComponent } from 'src/app/shared/components/typography/typography.component';
+import { SectionHeaderComponent } from 'src/app/shared/components/section-header/section-header.component';
 
 @Component({
   selector: 'app-noter',
@@ -17,6 +18,7 @@ import { TypographyComponent } from 'src/app/shared/components/typography/typogr
     ProjectHeaderComponent,
     ColorCardComponent,
     TypographyComponent,
+    SectionHeaderComponent,
   ],
   templateUrl: './noter.component.html',
   styleUrls: ['./noter.component.scss'],

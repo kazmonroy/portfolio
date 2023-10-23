@@ -5,6 +5,7 @@
   --textBody: #{$textColor_light};
   --textBodyHover: #{$textColorHover_light};
   --textPrimary: #{$textPrimaryColor_light};
+  --borderColor: #{$borderColor_light};
 
   --backdropColor: #{$backdrop_light};
   --backdropActive: #{$backdrop_active_light};
@@ -39,6 +40,7 @@
   --bgColor: #{$bgColor_dark};
   --textBody: #{$textColor_dark};
   --textBodyHover: #{$textColorHover_dark};
+  --borderColor: #{$borderColor_dark};
 
   --textPrimary: #{$textPrimaryColor_dark};
   --bgContainer: #{$bgContainerColor_dark};

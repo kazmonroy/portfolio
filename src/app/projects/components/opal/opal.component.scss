@@ -42,8 +42,6 @@ section {
           font-size: 14px;
           font-weight: 300;
           text-overflow: ellipsis;
-
-          /* Needed to make it work */
           overflow: hidden;
           white-space: nowrap;
         }
@@ -73,38 +71,6 @@ section {
     }
   }
 
-  .description {
-    width: Min(600px, 100%);
-
-    .preview {
-      margin: 32px 0px;
-
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-
-      li {
-        a {
-          display: flex;
-          gap: 8px;
-          align-items: center;
-          cursor: pointer;
-          padding: 4px;
-          border-radius: 24px;
-        }
-      }
-
-      .logo {
-        width: 24px;
-        display: flex;
-        align-items: center;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
   .elevation {
     display: flex;
     flex-direction: column;
@@ -254,9 +220,6 @@ section {
 
   section {
     padding: 6rem 0;
-    .description {
-      margin: auto;
-    }
 
     .elevation {
       display: grid;

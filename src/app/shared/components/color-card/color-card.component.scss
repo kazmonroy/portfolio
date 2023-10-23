@@ -14,7 +14,7 @@
       0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
 
-  border: 1px solid #1c1f31;
+  border: 1px solid #1c212e;
 
   .title {
     font-weight: 500;
@@ -63,4 +63,8 @@
 
 .border-none {
   border: none;
+}
+
+.border {
+  border: 1px solid var(--borderColor);
 }

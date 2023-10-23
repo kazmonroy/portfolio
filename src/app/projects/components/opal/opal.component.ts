@@ -8,6 +8,7 @@ import { ColorCardComponent } from 'src/app/shared/components/color-card/color-c
 import { OverviewComponent } from 'src/app/shared/components/overview/overview.component';
 import { CopyClipboardComponent } from 'src/app/shared/components/copy-clipboard/copy-clipboard.component';
 import { TypographyComponent } from 'src/app/shared/components/typography/typography.component';
+import { SectionHeaderComponent } from 'src/app/shared/components/section-header/section-header.component';
 
 enum Layers {
   LAYER_04 = 'l-04',
@@ -28,6 +29,7 @@ enum Layers {
     OverviewComponent,
     CopyClipboardComponent,
     TypographyComponent,
+    SectionHeaderComponent,
   ],
   templateUrl: './opal.component.html',
   styleUrls: ['./opal.component.scss'],
