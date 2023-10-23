@@ -13,7 +13,7 @@
     <a href="https://vercel.com/"><img src="https://img.shields.io/badge/Vercel-v.32-2181C1?&logo=vercel" alt="Vercel"></a>
     <a href="https://angular.io/"><img src="https://img.shields.io/badge/Angular-v16-2181C1?&logo=angular&logoColor=white" alt="Angular"></a>
     <a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/Sass-v1.69-2181C1?&logo=sass&logoColor=white" alt="Sass"></a>
-    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/Sass-v1.69-2181C1?&logo=sass&logoColor=white" alt="TypeScript"></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-v5-2181C1?&logo=sass&logoColor=white" alt="TypeScript"></a>
 </p>
 
 </div>
