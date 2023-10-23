@@ -1,35 +1,34 @@
 @use "../../styles/variables" as *;
 
 .top {
-  max-width: 100%;
   margin: auto;
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   padding-top: 8rem;
-  gap: 3rem;
 
   h1 {
     text-align: center;
-    color: var(--textPrimary);
-    font-family: var(--display-font);
   }
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+
+  padding: 3rem 0;
 
   .title {
-    max-width: 100%;
-    margin: auto;
+    display: grid;
     gap: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 1rem;
 
     .img-container {
-      max-width: 400px;
-      border-radius: 32px;
-      overflow: hidden;
+      min-width: 300px;
+      margin: auto;
 
       img {
+        border-radius: 32px;
         width: 100%;
         object-fit: cover;
       }
@@ -38,49 +37,55 @@
     .copy {
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      width: Min(500px, 100%);
-    }
-  }
-}
+      gap: 1rem;
 
-.body {
-  width: Min(500px, 100%);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem 0 5rem 0;
-}
-
-@media (min-width: 768px) {
-  .top {
-    padding-top: 13rem;
-    gap: 5rem;
-
-    .title {
-      flex-direction: row;
-      gap: 5rem;
-
-      .copy {
-        h3 {
-          font-size: 48px;
-          line-height: 56px;
-          font-weight: 400;
-        }
+      h3 {
+        font-size: clamp(1.875rem, 1.301rem + 2.449vw, 3.95rem);
+        line-height: 110%;
       }
     }
   }
 
   .body {
-    padding-top: 5rem;
-    gap: 1.5rem;
+    p {
+      margin-bottom: 1rem;
+    }
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .top {
-    max-width: 80%;
+    padding-top: 13rem;
+  }
+
+  .content {
+    .title {
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media (min-width: 906px) {
+  .content {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      display: flex;
+
+      .img-container {
+        min-width: 300px;
+      }
+
+      .copy {
+        max-width: 600px;
+      }
+    }
+
+    .body {
+      margin-top: 3rem;
+      max-width: 900px;
+    }
   }
 }
