@@ -1,27 +1,46 @@
-# Portfolio
+<a name="readme-top"></a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+<div align="center">
+  <a href="https://github.com/kazmonroy/portfolio">
+    <img src="/src/assets/logo.png" alt="Logo" width="64" height="64">
+  </a>
 
-## Development server
+<h3 align="center">Personal Portfolio</h3>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  <p align="center">
+    Hi and thank you for stopping by!
+    <br />
+    <br />
+    <a href="https://kazmonroy.com/">Check my portfolio</a>
+    ·
+    <a href="https://github.com/kazmonroy/portfolio/issues">Report Bug</a>
+    
+  </p>
+</div>
 
-## Code scaffolding
+## About
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+My portfolio is built with [Angular](https://angular.io/), styled with [Sass](https://sass-lang.com/) and deployed in [Vercel](https://vercel.com/). It showcases both Design and Full Stack Development projects that I have worked on. Feel free to have a look and feeback is most welcome! [kazmonroy.com](https://www.kazmonroy.com/)
 
-## Build
+### Built With
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [![Angular.io](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
 
-## Running unit tests
+- [![Vercel](https://img.shields.io/badge/Vercel-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white)](https://www.vercel.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [![Sass](https://img.shields.io/badge/Sass-C04080?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
 
-## Running end-to-end tests
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contact
 
-## Further help
+- [LinkedIn](https://www.linkedin.com/in/katherinemonroy/)
+- [kazmonroy.com](https://www.kazmonroy.com/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## License
+
+Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
