@@ -6,11 +6,10 @@ section {
 
   .typography {
     background-color: var(--modalBgContent);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
 
     justify-content: center;
 
@@ -20,7 +19,7 @@ section {
       display: flex;
       letter-spacing: 1px;
       overflow: hidden;
-      line-height: 64px;
+      line-height: 56px;
     }
     p {
       font-size: 18px;
@@ -29,6 +28,7 @@ section {
     ul {
       display: flex;
       gap: 24px;
+      padding-top: 2rem;
 
       li {
         span {
@@ -51,10 +51,11 @@ section {
       margin-inline: auto;
       width: fit-content;
       padding: 40px;
-      gap: 32px;
+
       .characters {
         font-weight: 400;
         font-size: 56px;
+        line-height: 80px;
       }
       p {
         font-size: 24px;
