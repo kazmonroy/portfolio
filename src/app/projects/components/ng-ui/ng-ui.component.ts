@@ -5,6 +5,7 @@ import { IconsModule } from 'src/app/icons/icons.module';
 import { FigmaFrameComponent } from './components/figma-frame/figma-frame.component';
 import { MacControlsComponent } from 'src/app/shared/components/mac-controls/mac-controls.component';
 import { OverviewComponent } from 'src/app/shared/components/overview/overview.component';
+import { TypographyComponent } from 'src/app/shared/components/typography/typography.component';
 
 @Component({
   selector: 'app-ng-ui',
@@ -16,6 +17,7 @@ import { OverviewComponent } from 'src/app/shared/components/overview/overview.c
     FigmaFrameComponent,
     MacControlsComponent,
     OverviewComponent,
+    TypographyComponent,
   ],
   templateUrl: './ng-ui.component.html',
   styleUrls: ['./ng-ui.component.scss'],
