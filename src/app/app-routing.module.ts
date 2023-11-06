@@ -4,17 +4,17 @@ import { HomeComponent } from './home/home.component';
 import { NgUiComponent } from './projects/components/ng-ui/ng-ui.component';
 
 const routes: Routes = [
-  { path: '', title: 'Home', component: HomeComponent },
+  { path: '', title: 'Home | Kaz Monroy', component: HomeComponent },
 
   {
     path: 'about',
-    title: 'About',
+    title: 'About | Kaz Monroy',
     loadComponent: () =>
       import('./about/about.component').then((c) => c.AboutComponent),
   },
   {
     path: 'projects',
-    title: 'Projects',
+    title: 'Projects | Kaz Monroy',
     loadComponent: () =>
       import('./projects/projects.component').then((c) => c.ProjectsComponent),
     children: [],
@@ -52,12 +52,13 @@ const routes: Routes = [
         (c) => c.SpireComponent
       ),
   },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '**',
-    title: '404 Page Not Found',
+    title: 'Page Not Found | Kaz Monroy ',
     loadComponent: () =>
-      import('./not-found/not-found.component').then(
-        (c) => c.NotFoundComponent
+      import('./page-not-found/page-not-found.component').then(
+        (c) => c.PageNotFoundComponent
       ),
   },
 ];
