@@ -14,7 +14,8 @@ nav {
   background-color: var(--backdropColor);
   position: sticky;
   backdrop-filter: blur(20px);
-  padding: 0.5rem;
+
+  padding: 0 12px;
   width: fit-content;
   border-radius: 4rem;
 
@@ -63,7 +64,7 @@ nav {
 @media (min-width: 640px) {
   nav {
     max-width: fit-content;
-    padding: 16px;
+    padding: 8px 12px;
     ul {
       gap: 16px;
 
