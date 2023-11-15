@@ -7,7 +7,7 @@ export class SpireService {
   tools = [
     { name: 'Tailwind', toolsvg: 'tailwindcss.svg' },
     { name: 'Node.js', toolsvg: 'nodedotjs.svg' },
-    { name: 'React', toolsvg: 'react.svg' },
+    { name: 'Next.js', toolsvg: 'nextdotjs.svg' },
     { name: 'Sanity', toolsvg: 'sanity.svg' },
   ];
 
